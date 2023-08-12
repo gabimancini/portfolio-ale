@@ -12,6 +12,10 @@ nav > ul > a {
   padding: 15px 10px;
 }
 
+header .textWithArrow_container {
+  display: none;
+}
+
 nav ul a .icon {
   margin: 15px 10px;
 }
@@ -42,6 +46,9 @@ nav .line {
   header {
     background: url(./assets/bordeMenu.svg) no-repeat bottom/contain;
     height: 126px;
+  }
+  header .textWithArrow_container {
+    display: flex;
   }
   nav {
     position: relative;
