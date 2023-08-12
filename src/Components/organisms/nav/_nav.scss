@@ -1,0 +1,122 @@
+nav {
+    display: flex;
+
+    >ul {
+        display: none;
+
+        >a {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 15px 10px;
+        }
+    }
+}
+
+nav ul a .icon {
+    margin: 15px 10px;
+}
+
+nav .line {
+    order: 1;
+}
+
+.hamburger#open {
+    background: url('./assets/botonCerrar.svg') no-repeat;
+}
+
+.hamburger#open+ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: auto;
+    width: 90%;
+    top: 70px;
+    left: 0;
+    background-color: var(--gray);
+    transform: translateX(5%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .6);
+    padding: 20px;
+}
+
+@media screen and (min-width: 879px) {
+    header {
+        background: url(./assets/bordeMenu.svg) no-repeat bottom/contain;
+        height: 126px;
+    }
+nav{
+    position: relative;
+}
+    .hamburger#open+ul,
+    nav ul {
+        align-items: center;
+        box-shadow: unset;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: unset;
+        width: unset;
+        padding: unset;
+
+        span {
+            position: absolute;
+            left: 52%;
+            bottom: -20%;
+        }
+    }
+
+    nav>ul>a {
+        margin: 0 10px;
+        position: relative;
+        text-align: center;
+        width: 100px;
+        padding: unset;
+    }
+
+    nav>ul>a::after {
+        content: "";
+        background: url('./assets/separador_link.png') no-repeat;
+        height: 32.5px;
+        position: absolute;
+        right: -14px;
+        top: -3px;
+        width: 8.6px;
+    }
+
+    nav>ul>a:last-of-type::after {
+        background: none;
+    }
+
+    nav>ul>a::before {
+        content: "";
+        background-color: var(--gray);
+        width: 100%;
+        height: 18px;
+        position: absolute;
+        top: 3px;
+        z-index: -1;
+        left: 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    ul .textWithArrow_container.social .line{
+        position: absolute;
+    right: 15%;
+    top: 65%;
+    }
+    .navArrow{
+        position: absolute;
+    top: 42%;
+    left: -150px;
+    span{
+        top: 5px;
+        position: relative;
+        right: 5px;
+    }
+    }
+}

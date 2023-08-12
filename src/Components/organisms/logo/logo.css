@@ -1,0 +1,13 @@
+.logo_container img{
+    max-width: 120px;
+}
+.logo_container{
+    display: flex;
+    align-items: center;
+}
+ 
+@media screen and (min-width: 879px){
+    .logo_container img{
+        max-width: 100%;
+    }
+}

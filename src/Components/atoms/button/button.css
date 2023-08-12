@@ -1,0 +1,9 @@
+.hamburger{
+    background: url('./../../../assets/menuhamburguesa.svg') no-repeat;
+    width: 35px;
+    height: 35px;
+    border: none;
+}
+.close{
+    background: url('./../../../assets/botonCerrar.svg') no-repeat;
+}
