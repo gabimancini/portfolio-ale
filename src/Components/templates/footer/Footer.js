@@ -8,6 +8,7 @@ import './footer.css';
 const Footer = () => {
     return (
         <footer>
+        <div className='container'>
             <div className="footer_inner">
                 <h2>Alejandro Ritta</h2>
                 <p>
@@ -15,7 +16,7 @@ const Footer = () => {
                 </p>
             </div>
             <div className="footer_inner">
-                <h4>Páginas</h4>
+                <h3>Páginas</h3>
                 <ul>
                     <List href='#' variant='nav' text='Home' />
                     <List href='#' variant='nav' text='Sobre Mí' />
@@ -23,12 +24,13 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="footer_inner">
-                <h4>Seguime</h4>
+                <h3>Seguime</h3>
                 <div>
                     <IconLink href="#" src={instagramIcon} alt='Instagram' className='icon' />
                     <IconLink href="#" src={linkedinIcon} alt='Linkedin' className='icon' />
                     <IconLink href="#" src={behanceIcon} alt='Behance' className='icon' />
                 </div>
+            </div>
             </div>
         </footer>
     )

@@ -42,7 +42,7 @@ nav .line {
   padding: 20px;
 }
 
-@media screen and (min-width: 879px) {
+@media screen and (min-width: 997px) {
   header {
     background: url(./assets/bordeMenu.svg) no-repeat bottom/contain;
     height: 126px;
@@ -119,6 +119,14 @@ nav .line {
     top: 5px;
     position: relative;
     right: 5px;
+  }
+}
+@media screen and (min-width: 997px) {
+  section .container {
+    display: flex;
+  }
+  section .container div {
+    width: 50%;
   }
 }
 :root {
