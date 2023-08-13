@@ -12,24 +12,24 @@ const Footer = () => {
             <div className="footer_inner">
                 <h2>Alejandro Ritta</h2>
                 <p>
-                    Diseño UX: la combinación perfecta entre estética y funcionalidad para crear experiencias de usuario memorables.
-                </p>
+                UX Design: the perfect combination of aesthetics and functionality to create memorable user experiences.                </p>
             </div>
             <div className="footer_inner">
-                <h3>Páginas</h3>
+                <h3>Home</h3>
                 <ul>
-                    <List href='#' variant='nav' text='Home' />
-                    <List href='#' variant='nav' text='Sobre Mí' />
-                    <List href='#' variant='nav' text='Proyectos' />
+                    <List href='#' variant='nav' text='About me' />
+                    <List href='#' variant='nav' text='Projects' />
+                    <List href='#' variant='nav' text='Contact me' />
                 </ul>
             </div>
             <div className="footer_inner">
-                <h3>Seguime</h3>
+                <h3>Follow me</h3>
                 <div>
                     <IconLink href="#" src={instagramIcon} alt='Instagram' className='icon' />
                     <IconLink href="#" src={linkedinIcon} alt='Linkedin' className='icon' />
                     <IconLink href="#" src={behanceIcon} alt='Behance' className='icon' />
                 </div>
+                <a href="mailto:aletomasr@gmail.com">aletomasr@gmail.com</a>
             </div>
             </div>
         </footer>

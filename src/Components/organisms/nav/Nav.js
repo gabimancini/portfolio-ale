@@ -1,6 +1,6 @@
 import { useState } from "react"; 
 import IconLink from "../../molecules/iconLink/IconLink";
-import '../../../index.css';
+import '../../../css/index.css';
 import instagramIcon from './../../../assets/instagram_icon.png';
 import linkedinIcon from './../../../assets/linkedin_icon.png';
 import behanceIcon from './../../../assets/behance_icon.png';
@@ -14,7 +14,7 @@ const Nav = () => {
 
     return (
         <nav>
-            <TextWithArrow src={flechaBarraImg} text="nav bar" className="navArrow"/>
+            <TextWithArrow src={flechaBarraImg} text="nav bar" className="n"/>
 
                <Button onClick={()=>setIsOpen(!isOpen)} className="hamburger" id={`${isOpen && "open"}`} />
  

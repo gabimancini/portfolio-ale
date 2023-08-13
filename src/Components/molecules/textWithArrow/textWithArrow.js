@@ -1,5 +1,5 @@
 import Img from "../../atoms/img/Img";
-import './textWithArrow.css';
+import '../../../css/index.css';
 const TextWithArrow = ({src,text,className})=> {
     return(
         <>

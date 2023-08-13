@@ -1,3 +1,4 @@
+@media screen  and (min-width: 997px) {
 .textWithArrow_container{
     display: flex;
     align-items: center;
@@ -5,9 +6,4 @@
 .line{
     max-width: 60px;
 }
-
-@media screen  and (min-width: 870px) {
-    .line{
-        max-width: 100%;
-    }
 }

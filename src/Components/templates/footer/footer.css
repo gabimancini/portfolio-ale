@@ -1,15 +1,19 @@
 .footer_inner li{
     padding: 6px 0;
 }
+.footer_inner .icon{
+    margin-right: 10px;
+}
 @media screen and (min-width: 997px){
     footer .container {
         display: flex;
     }
     .footer_inner{
-        width: 25%;
         padding: 20px;
+        width: 30%;
     }
     .footer_inner:nth-child(1){
-        width: 50%;
+        padding-right:10%;
+        width: 40%;
     }
 }
