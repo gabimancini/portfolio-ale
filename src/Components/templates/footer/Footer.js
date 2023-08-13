@@ -3,7 +3,7 @@ import List from '../../molecules/list/List';
 import instagramIcon from './../../../assets/instagram_icon.png';
 import linkedinIcon from './../../../assets/linkedin_icon.png';
 import behanceIcon from './../../../assets/behance_icon.png';
-import './footer.css';
+import '../../../css/index.css';
 
 const Footer = () => {
     return (
@@ -15,7 +15,7 @@ const Footer = () => {
                 UX Design: the perfect combination of aesthetics and functionality to create memorable user experiences.                </p>
             </div>
             <div className="footer_inner">
-                <h3>Home</h3>
+                <h3>Pages</h3>
                 <ul>
                     <List href='#' variant='nav' text='About me' />
                     <List href='#' variant='nav' text='Projects' />
@@ -29,7 +29,13 @@ const Footer = () => {
                     <IconLink href="#" src={linkedinIcon} alt='Linkedin' className='icon' />
                     <IconLink href="#" src={behanceIcon} alt='Behance' className='icon' />
                 </div>
-                <a href="mailto:aletomasr@gmail.com">aletomasr@gmail.com</a>
+                <a href="mailto:aletomasr@gmail.com" className='email'>aletomasr@gmail.com</a>
+            </div>
+            </div>
+            <div className='footer_bottom'>
+            <div className='container d-flex justify-between'>
+            <p className='developer_name'>Copyright © <span> Alejandro Ritta</span> 2023 </p>
+                <p className='developer_name'>Developed By<span> Gabriela Mancini</span> </p>
             </div>
             </div>
         </footer>
