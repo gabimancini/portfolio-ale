@@ -1,9 +1,52 @@
+#hero {
+    padding: 60px 0;
+   
+    .container{
+        position: relative;
+    }
+    h1 {
+        color: #14142B;
+        font-size: 68px;
+
+        span {
+            color: #3E0EFF;
+        }
+    }
+
+    h2 {
+        color: #000;
+        font-size: 42px;
+    }
+
+}
+.sticky{
+    display: none;
+}
 @media screen and (min-width: 997px) {
     section .container {
+        .hero_text{
+            width: 60%;
+        }
         display: flex;
-
+        .sticky{
+            display: block;
+            background: url(../assets/stickyImg.svg) no-repeat;
+            background-size: contain;
+            position: absolute;
+            height: 400px;
+           width: 200px;
+           top:-40px;
+          right: 40px;
+          text-align: center;
+          p{
+            color: rgba(0, 0, 0, 0.50);
+            font-size: 24px;
+            transform: rotate(-2.516deg);
+            margin-top: 40px;
+          }
         div {
             width: 50%;
         }
+    } 
     }
 }

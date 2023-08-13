@@ -171,11 +171,53 @@ nav .line {
     right: 5px;
   }
 }
+#hero {
+  padding: 60px 0;
+}
+#hero .container {
+  position: relative;
+}
+#hero h1 {
+  color: #14142B;
+  font-size: 68px;
+}
+#hero h1 span {
+  color: #3E0EFF;
+}
+#hero h2 {
+  color: #000;
+  font-size: 42px;
+}
+
+.sticky {
+  display: none;
+}
+
 @media screen and (min-width: 997px) {
   section .container {
     display: flex;
   }
-  section .container div {
+  section .container .hero_text {
+    width: 60%;
+  }
+  section .container .sticky {
+    display: block;
+    background: url(../assets/stickyImg.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 400px;
+    width: 200px;
+    top: -40px;
+    right: 40px;
+    text-align: center;
+  }
+  section .container .sticky p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    transform: rotate(-2.516deg);
+    margin-top: 40px;
+  }
+  section .container .sticky div {
     width: 50%;
   }
 }
