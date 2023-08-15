@@ -14,7 +14,7 @@ const Nav = () => {
 
     return (
         <nav>
-            <TextWithArrow src={flechaBarraImg} text="nav bar" className="n"/>
+            <TextWithArrow src={flechaBarraImg} text="nav bar" className="color-black-aplha-6"/>
 
                <Button onClick={()=>setIsOpen(!isOpen)} className="hamburger bg-hamburgerImg" id={`${isOpen && "open"}`} />
  
@@ -27,7 +27,7 @@ const Nav = () => {
                     <IconLink href="#" src={linkedinIcon} alt='Linkedin' className='icon' />
                     <IconLink href="#" src={behanceIcon} alt='Behance' className='icon' />
                 </div>
-                <TextWithArrow src={flechaIconsImg} text="social icons" className="social" />
+                <TextWithArrow src={flechaIconsImg} text="social icons" className="social color-black-aplha-6" />
             </ul>
         </nav>
     )
