@@ -6,11 +6,7 @@ footer{
 }
 .footer_inner li{
     padding: 6px 0;
-}
-.footer_inner h2{
-    color: #3E0EFF;
-    font-size: 50px;
-}
+} 
 .footer_inner h3, .footer_inner a.email{
     font-size: 24px;
 }
@@ -21,10 +17,8 @@ footer{
     border-top: 1px solid rgba(0, 0, 0, 0.20);;
 }
 .developer_name{
-    font-size: 19px;
-    span{
-        color: #EE0C0C
-    }
+    font-size: 19px; 
+    
 }
 @media screen and (min-width: 997px){
  

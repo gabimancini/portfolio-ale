@@ -1,0 +1,28 @@
+ .sticky {
+     display: none;
+ }
+
+ @media screen and (min-width: 997px) {
+     section .container {
+
+         .sticky {
+             display: block;
+             background-size: contain;
+             height: 400px;
+             width: 200px;
+             right: 0;
+             text-align: center;
+
+             p {
+                 color: rgba(0, 0, 0, 0.50);
+                 font-size: 24px;
+                 transform: rotate(-2.516deg);
+                 margin-top: 40px;
+             }
+
+             div {
+                 width: 50%;
+             }
+         }
+     }
+ }

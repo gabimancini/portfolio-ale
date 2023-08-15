@@ -1,8 +1,20 @@
-@import 'general';
+/*** Utilities ***/
+@import 'utilities/breakpoints';
+@import 'utilities/boxModel';
+@import 'utilities/general';
+@import 'utilities/flexProperties';
+@import 'utilities/layouts';
+@import 'utilities/colors';
+@import 'utilities/fonts';
+@import 'utilities/fonts';
+@import 'utilities/background';
+
+/*** Vendors ***/
+@import 'vendor/sticky';
+@import 'vendor/buttons';
 @import '../Components/molecules/textWithArrow/textWithArrow';
-@import '../Components/organisms/nav/nav';
-@import '../Components/templates/hero/hero';
+@import '../Components/organisms/nav/nav'; 
 @import '../Components/templates/footer/footer';
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 
 

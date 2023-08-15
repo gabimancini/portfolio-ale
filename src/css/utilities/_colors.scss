@@ -1,0 +1,16 @@
+/**** Colors *****/
+$colors: (
+    'primary-black':#000,
+    'secondary-black': #14142B,
+    'black-aplha-6': rgba(0, 0, 0, 0.60),
+    'blue': #3E0EFF,
+    'red': #EE0C0C,
+    'gray': #D9D9D9
+);
+
+@each $color-name ,
+$color-code in $colors {
+    .color-#{$color-name} {
+        color: $color-code;
+    }
+}

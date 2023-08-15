@@ -1,0 +1,14 @@
+$paddings:(
+
+);
+$margins: (
+
+);
+ 
+$positions: relative, absolute;
+
+@each $position in $positions {
+  .position-#{$position} {
+    position: $position;
+  }
+}

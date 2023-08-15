@@ -16,7 +16,7 @@ const Nav = () => {
         <nav>
             <TextWithArrow src={flechaBarraImg} text="nav bar" className="n"/>
 
-               <Button onClick={()=>setIsOpen(!isOpen)} className="hamburger" id={`${isOpen && "open"}`} />
+               <Button onClick={()=>setIsOpen(!isOpen)} className="hamburger bg-hamburgerImg" id={`${isOpen && "open"}`} />
  
             <ul>
             <Link to="/">Home</Link>

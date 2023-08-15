@@ -24,7 +24,7 @@ nav .line {
 }
 
 .hamburger#open {
-    background: url('../assets/botonCerrar.svg') no-repeat;
+    background: url('../assets/cerrarImg.svg') no-repeat;
 }
 
 .hamburger#open+ul {
@@ -44,7 +44,6 @@ nav .line {
 @media screen and (min-width: 997px) {
     header {
         background: url(../assets/bordeMenu.svg) no-repeat bottom/contain;
-        height: 126px;
     }
     header .textWithArrow_container{
         display: flex;

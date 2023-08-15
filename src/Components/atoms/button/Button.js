@@ -1,5 +1,4 @@
 import classnames from "classnames";
-import './button.css';
 
 const Button = ({text, className, onClick, id})=>{
     const buttonClassName = classnames('button',{
@@ -9,7 +8,7 @@ const Button = ({text, className, onClick, id})=>{
         close: className === 'close',
     })
     return(
-        <button className={buttonClassName} onClick={onClick} id={id}>{text}</button>
+        <button className={`${buttonClassName}  ${className}`} onClick={onClick} id={id}>{text}</button>
     )
 }
 export default Button;
