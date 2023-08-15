@@ -6,6 +6,7 @@ import behanceIcon from './../../../assets/behance_icon.png';
 import '../../../css/index.css';
 
 const Footer = () => {
+    const develope = '</>';
     return (
         <footer>
         <div className='container'>
@@ -35,7 +36,7 @@ const Footer = () => {
             <div className='footer_bottom'>
             <div className='container d-flex justify-between'>
             <p className='developer_name'>Copyright © <span className='color-red'> Alejandro Ritta</span> 2023 </p>
-                <p className='developer_name'>Developed By<span className='color-red'> Gabriela Mancini</span> </p>
+                <p className='developer_name'>{develope} Developed By<span className='color-red'> Gabriela Mancini</span> </p>
             </div>
             </div>
         </footer>

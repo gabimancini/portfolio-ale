@@ -757,13 +757,9 @@ footer {
 @media screen and (min-width: 997px) {
   footer .container {
     display: flex;
-  }
-  .footer_inner {
-    padding: 20px;
-    width: 30%;
+    justify-content: space-between;
   }
   .footer_inner:nth-child(1) {
-    padding-right: 10%;
-    width: 40%;
+    max-width: 380px;
   }
 }/*# sourceMappingURL=index.css.map */
