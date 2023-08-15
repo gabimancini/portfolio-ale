@@ -1,6 +1,5 @@
 import Img from "../../atoms/img/Img";
 import HeroImg from "../../../assets/hero.svg";
-import StickyImg from "../../../assets/stickyImg.svg";
 const Hero = () => {
     return (
         <section id="hero">
