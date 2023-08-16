@@ -1,27 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower:wght@400&display=swap');
 $body-font: 'Indie Flower', cursive; // Google font
+body {
+  font-family: $body-font;
+}
+
 $font-sizes: (
-  'h1': 68px,
-  'h2': 42px,
-  'h3': 24px,
-  'paragraph': 18px,
-  '15' : 15px
+  'h1':  4,
+  'h2':  3,
+  'h3':  2,
+  'paragraph':  1.2,
+  '15' :   1,
+  '1_5': 1.5
 );
 
 @each $font-size,
 $font-code in $font-sizes {
   .font-size-#{$font-size} {
-    font-size: $font-code;
-  }
-}
-
-body {
-  font-family: $body-font;
-}
-
-@media screen and (max-width: 997px) {
-  h1 {
-    font-size: 34px;
+    font-size: $font-code+em;
   }
 }
 

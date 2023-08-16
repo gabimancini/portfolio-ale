@@ -4,7 +4,7 @@ $viewport-lg: 992;
 $viewport-xl: 1440;
 $flex__cols: 12;
 
-$map-flex-props: (
+$map-viewports: (
     '': 0,
     '-sm': $viewport-sm,
     '-md': $viewport-md,
@@ -30,10 +30,8 @@ $map-flex-props: (
     }
 }
 
-;
-
 @each $modifier ,
-$breakpoint in $map-flex-props {
+$breakpoint in $map-viewports {
     @if($modifier =='') {
         $modifier: '-xs';
     }
@@ -54,10 +52,9 @@ $breakpoint in $map-flex-props {
 .container {
     max-width: 1230px;
     margin: 0 auto;
-    padding: 40px 20px;
 
     @each $modifier ,
-    $breakpoint in $map-flex-props {
+    $breakpoint in $map-viewports {
         @include create-col-classes($modifier, $flex__cols, $breakpoint);
     }
 }

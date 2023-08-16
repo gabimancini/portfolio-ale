@@ -8,19 +8,20 @@ import flechaBarraImg from './../../../assets/flecha_barra_navegacion.png';
 import flechaIconsImg from './../../../assets/icons_arrow.svg';
 import TextWithArrow from "../../molecules/textWithArrow/textWithArrow";
 import Button from "../../atoms/button/Button";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav>
+        <nav className="p-x-20 p-y-30">
             <TextWithArrow src={flechaBarraImg} text="nav bar" className="color-black-aplha-6"/>
 
                <Button onClick={()=>setIsOpen(!isOpen)} className="hamburger bg-hamburgerImg" id={`${isOpen && "open"}`} />
  
             <ul>
             <Link to="/">Home</Link>
-            <Link to="/about"> About me</Link>
+            <HashLink to="#about"> About me</HashLink>
             <Link to="/projects"> Projects</Link>
                 <div>
                     <IconLink href="#" src={instagramIcon} alt='Instagram' className='icon' />

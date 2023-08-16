@@ -1,9 +1,27 @@
-.d-flex{
-    display: flex;
+.d-flex {
+  display: flex;
+}
+
+$wraps: wrap no-wrap;
+
+@each $wrap in $wraps {
+  .#{$wrap} {
+    flex-wrap: $wrap;
   }
-  .wrap{
-    flex-wrap: wrap;
+}
+
+$justifies: center space-between;
+
+@each $justify in $justifies {
+  .justify-#{$justify} {
+    justify-content: $justify;
   }
-  .justify-between{
-    justify-content: space-between;
+}
+
+$aligns: start center end;
+
+@each $align in $aligns {
+  .align-#{$align} {
+    align-items: $align;
   }
+}

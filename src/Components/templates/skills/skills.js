@@ -18,19 +18,20 @@ const Skills = () => {
             bg: "sticky_yellow"
         }
     ]
+    const List = ["Figma  100%", "Justinmind  80%", "Agile methodology 90%", "Adobe XD 100%", "Lenguage 60% ", "Google Presentation 100%"]
     return (
         <section id="skills">
-            <div className="container d-flex">
-                <div className="container__col-lg-6 d-flex">
+            <div className="container d-flex p-y-100 p-x-20 wrap justify-space-between">
+                <div className="container__col-lg-6 d-flex align-center">
                     {Stickies.map((sticky, index) => (
                         <Sticky key={index} title={sticky.title} text={sticky.text} className={`bg-${sticky.bg} w-200 h-200 p-20`} />
                     )
                     )}
                 </div>
-                <div className="container__col-lg-6">
+                <div className="container__col-lg-5">
                 <h2 className="font-size-h2">My skills</h2>
-                    <ul>
-                        <li>Probando</li>
+                    <ul className="d-flex wrap">
+                        {List.map((item, index)=><li key={index} className="skills_list font-size-1_5 p-10">{item}</li>)}
                     </ul>
                 </div>
             </div>

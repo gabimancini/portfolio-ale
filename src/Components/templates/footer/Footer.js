@@ -9,7 +9,7 @@ const Footer = () => {
     const develope = '</>';
     return (
         <footer>
-        <div className='container'>
+        <div className='container p-x-20 p-y-40'>
             <div className="footer_inner">
                 <h2 className='color-blue font-size-h2'>Alejandro Ritta</h2>
                 <p>

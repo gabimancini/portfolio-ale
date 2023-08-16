@@ -1,20 +1,38 @@
-$paddings:(
+$box-sizes:(
   '10': 10px,
-  '20': 20px
+  '20': 20px,
+  '30': 30px,
+  '40': 40px,
+  '50': 50px,
+  '60': 60px,
+  '70': 70px,
+  '100': 100px
   );
-@each $padding, $padding-code in $paddings {
+@each $padding, $padding-code in $box-sizes {
   .p-#{$padding} {
     padding: $padding-code;
   }
+  .p-x-#{$padding} {
+    padding-left: $padding-code;
+    padding-right: $padding-code;
+  }
+  .p-y-#{$padding} {
+    padding-top: $padding-code;
+    padding-bottom: $padding-code;
+  }
 }
 
-$margins: (
-  '10': 10px,
-  '20': 20px
-);
-@each $margin, $margin-code in $margins {
+@each $margin, $margin-code in $box-sizes{
   .m-#{$margin} {
     margin: $margin-code;
+  }
+  .m-x-#{$margin} {
+    margin-left: $margin-code;
+    margin-right: $margin-code;
+  }
+  .m-y-#{$margin} {
+    margin-top: $margin-code;
+    margin-bottom: $margin-code;
   }
 }
 
