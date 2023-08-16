@@ -1,10 +1,9 @@
 import classNames from 'classnames';
-import './link.css';
 
 const Links = ({href, variant, children})=>{
     const linkClassName = classNames({
         nav: variant === 'nav',
-        figma: variant === 'figma',
+        quote: variant === 'quote',
         website: variant === 'website',
         underlined: variant === 'underlined'
     })

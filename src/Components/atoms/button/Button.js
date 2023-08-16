@@ -2,8 +2,6 @@ import classnames from "classnames";
 
 const Button = ({text, className, onClick, id})=>{
     const buttonClassName = classnames('button',{
-        square: className === 'square',
-        circle: className === 'circle',
         hamburger: className === 'hamburger',
         close: className === 'close',
     })

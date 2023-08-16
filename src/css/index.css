@@ -1,12 +1,51 @@
 /*** Utilities ***/
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower:wght@400&display=swap");
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
 .position-relative {
   position: relative;
 }
 
 .position-absolute {
   position: absolute;
+}
+
+.w-100 {
+  width: 100px;
+}
+
+.h-100 {
+  height: 100px;
+}
+
+.w-188 {
+  width: 188px;
+}
+
+.h-188 {
+  height: 188px;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.h-200 {
+  height: 200px;
 }
 
 * {
@@ -26,7 +65,7 @@ a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .d-flex {
@@ -90,7 +129,7 @@ img {
   }
 }
 .container {
-  max-width: 1440px;
+  max-width: 1230px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -519,44 +558,69 @@ img {
   font-size: 18px;
 }
 
-body {
-  font-family: "Indie Flower", cursive;
-}
-
-.font-size-h1 {
-  font-size: 68px;
-}
-
-.font-size-h2 {
-  font-size: 42px;
-}
-
-.font-size-h3 {
-  font-size: 24px;
-}
-
-.font-size-paragraph {
-  font-size: 18px;
+.font-size-15 {
+  font-size: 15px;
 }
 
 body {
   font-family: "Indie Flower", cursive;
+}
+
+@media screen and (max-width: 997px) {
+  h1 {
+    font-size: 34px;
+  }
+}
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .bg-stickyImg {
   background: url("../assets/stickyImg.svg") no-repeat;
+  background-size: cover;
 }
 
 .bg-hamburgerImg {
   background: url("../assets/hamburgerImg.svg") no-repeat;
+  background-size: cover;
 }
 
 .bg-cerrarImg {
   background: url("../assets/cerrarImg.svg") no-repeat;
+  background-size: cover;
 }
 
 .bg-bordeMenu {
   background: url("../assets/bordeMenu.svg") no-repeat;
+  background-size: cover;
+}
+
+.bg-hero_btn {
+  background: url("../assets/hero_btn.svg") no-repeat;
+  background-size: cover;
+}
+
+.bg-sticky_green {
+  background: url("../assets/sticky_green.svg") no-repeat;
+  background-size: cover;
+}
+
+.bg-sticky_blue {
+  background: url("../assets/sticky_blue.svg") no-repeat;
+  background-size: cover;
+}
+
+.bg-sticky_yellow {
+  background: url("../assets/sticky_yellow.svg") no-repeat;
+  background-size: cover;
 }
 
 /*** Vendors ***/

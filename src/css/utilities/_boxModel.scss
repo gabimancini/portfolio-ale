@@ -1,14 +1,42 @@
 $paddings:(
+  '10': 10px,
+  '20': 20px
+  );
+@each $padding, $padding-code in $paddings {
+  .p-#{$padding} {
+    padding: $padding-code;
+  }
+}
 
-);
 $margins: (
-
+  '10': 10px,
+  '20': 20px
 );
- 
+@each $margin, $margin-code in $margins {
+  .m-#{$margin} {
+    margin: $margin-code;
+  }
+}
+
 $positions: relative, absolute;
 
 @each $position in $positions {
   .position-#{$position} {
     position: $position;
+  }
+}
+
+
+$sizes: (
+  '100': 100px,
+  '188': 188px,
+  '200': 200px
+);
+@each $size, $size-code in $sizes {
+  .w-#{$size} {
+    width: $size-code;
+  }
+  .h-#{$size} {
+    height: $size-code;
   }
 }
