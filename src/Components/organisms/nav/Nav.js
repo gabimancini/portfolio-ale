@@ -21,7 +21,7 @@ const Nav = () => {
  
             <ul>
             <Link to="/">Home</Link>
-            <HashLink to="#about"> About me</HashLink>
+            <HashLink to="/#about"> About me</HashLink>
             <Link to="/projects"> Projects</Link>
                 <div>
                     <IconLink href="#" src={instagramIcon} alt='Instagram' className='icon' />

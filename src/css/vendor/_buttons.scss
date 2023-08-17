@@ -1,5 +1,16 @@
-.button{
+
+button{
+    background: none; 
+    color: inherit; 
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
     border: none;
+    -webkit-user-select: none; /* for button */
+    -webkit-appearance: button; /* for input */
+      -moz-user-select: none;
+       -ms-user-select: none;
 }
 .hamburger{ 
     height: 35px;
