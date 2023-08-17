@@ -1,11 +1,14 @@
 import Cards from "../organisms/cards";
 import Gabriela from '../../assets/gabriela.svg';
 import Pet from '../../assets/pet.svg';
+import {useState} from 'react';
 import Devmagister from '../../assets/devmagister.svg';
 import Steak from '../../assets/steak.svg';
 const Projects = () => {
+    const [expanded, setExpanded] = useState(false)
+    
     let browser1 = "browser1"
-    const projects = [
+    let projects = [
         {
             button1: "Web site",
             button2: "Figma",
@@ -31,6 +34,13 @@ const Projects = () => {
         }
 
     ]
+    const onClickHandle= ()=>{
+        setExpanded(!expanded)
+           projects.splice(0, 2);
+        console.log(window.innerWidth)
+       
+    }
+    
     return (
         <section id="projects">
         <div className="container">
@@ -41,14 +51,20 @@ const Projects = () => {
             </div>
             <div className="d-flex wrap justify-space-around p-x-20">
 
-            {
-                projects.map((project,index)=>(
+            {expanded?projects.map((project,index)=>( 
+                    
+                    <Cards key={index} btnText={project.button1} text={project.text} src={project.img} className="text-left bg-browser1"/>
+                )): projects.slice(0,2).map((project,index)=>( 
+                    
                     <Cards key={index} btnText={project.button1} text={project.text} src={project.img} className="text-left bg-browser1"/>
                 )
-            )
+                )
+            }
+            </div>{
+                window.innerWidth<780?
+                <button onClick={onClickHandle}>{expanded?"show less":"show more"}</button>:""
             }
             
-            </div>
             </div>
         </section>
     )
