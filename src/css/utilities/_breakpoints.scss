@@ -1,3 +1,14 @@
+// Define breakpoints in a Sass map.
+$map-viewports: (
+    '': 0,
+    '-sm': 390,
+    '-md': 768,
+    '-lg': 992,
+    '-xl': 1440
+);
+
+// Create a mixin that receives a breakpoint that dynamically 
+// creates media queries.
 @mixin create-mq($breakpoint, $min-or-max) {
     @if($breakpoint ==0) {
         @content;
@@ -9,3 +20,23 @@
         }
     }
 }
+
+@each $modifier ,
+$breakpoint in $map-viewports {
+    @if($modifier =='') {
+        $modifier: '-xs';
+    }
+
+    @include create-mq($breakpoint, 'max') {
+        .hidden#{$modifier}-down {
+            display: none !important;
+        }
+    }
+
+    @include create-mq($breakpoint, 'min') {
+        .hidden#{$modifier}-up {
+            display: none !important;
+        }
+    }
+}
+

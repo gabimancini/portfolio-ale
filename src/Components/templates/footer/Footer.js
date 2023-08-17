@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
             </div>
             <div className='footer_bottom'>
-            <div className='container d-flex justify-between'>
+            <div className='container d-flex justify-between wrap'>
             <p className='developer_name'>Copyright © <span className='color-red'> Alejandro Ritta</span> 2023 </p>
                 <p className='developer_name'>{develope} Developed By<span className='color-red'> Gabriela Mancini</span> </p>
             </div>

@@ -35,7 +35,24 @@ $box-sizes:(
     margin-bottom: $margin-code;
   }
 }
+@each $modifier ,
+$breakpoint in $map-viewports {
+    @if($modifier =='') {
+        $modifier: '-xs';
+    }
 
+    @include create-mq($breakpoint, 'max') {
+        .padding#{$modifier}-down {
+            padding: 0 20px !important;
+        }
+    }
+
+    @include create-mq($breakpoint, 'min') {
+        .padding#{$modifier}-up {
+            padding: 0 20px !important;
+        }
+    }
+}
 $positions: relative, absolute;
 
 @each $position in $positions {
@@ -43,8 +60,13 @@ $positions: relative, absolute;
     position: $position;
   }
 }
+$displays: block flex inline-block  none;
 
-
+@each $display in $displays {
+  .d-#{$display} {
+    display: $display;
+  }
+}
 $sizes: (
   '100': 100px,
   '188': 188px,

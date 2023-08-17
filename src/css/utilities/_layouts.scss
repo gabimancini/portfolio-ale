@@ -1,17 +1,6 @@
-$viewport-sm: 390;
-$viewport-md: 768;
-$viewport-lg: 992;
-$viewport-xl: 1440;
 $flex__cols: 12;
 
-$map-viewports: (
-    '': 0,
-    '-sm': $viewport-sm,
-    '-md': $viewport-md,
-    '-lg': $viewport-lg,
-    '-xl': $viewport-xl
-);
-
+// A mixin called create-col-classes and use the create-mq mixin.
 @mixin create-col-classes($modifier, $flex-cols, $breakpoint) {
     @include create-mq($breakpoint, 'min') {
         &__col#{$modifier}-offset-0 {
@@ -26,25 +15,6 @@ $map-viewports: (
             &__col#{$modifier}-offset-#{$i} {
                 margin-left: calc((100 / ($flex-cols / $i)) * 1%);
             }
-        }
-    }
-}
-
-@each $modifier ,
-$breakpoint in $map-viewports {
-    @if($modifier =='') {
-        $modifier: '-xs';
-    }
-
-    @include create-mq($breakpoint, 'max') {
-        .hidden#{$modifier}-down {
-            display: none !important;
-        }
-    }
-
-    @include create-mq($breakpoint, 'min') {
-        .hidden#{$modifier}-up {
-            display: none !important;
         }
     }
 }

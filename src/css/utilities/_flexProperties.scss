@@ -1,7 +1,3 @@
-.d-flex {
-  display: flex;
-}
-
 $wraps: wrap no-wrap;
 
 @each $wrap in $wraps {
