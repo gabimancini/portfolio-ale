@@ -8,7 +8,7 @@ const Projects = () => {
     const projects = [
         {
             button1: "Web site",
-            button1: "Figma",
+            button2: "Figma",
             img: Gabriela,
             bg: browser1
         },
