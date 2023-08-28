@@ -1,0 +1,8 @@
+.textWithArrow_container {
+    display: none;
+}
+@media screen and (min-width: 879px){
+    .textWithArrow_container {
+        display: block;
+    }
+}

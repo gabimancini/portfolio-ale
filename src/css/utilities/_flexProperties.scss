@@ -21,3 +21,11 @@ $aligns: start center end;
     align-items: $align;
   }
 }
+
+$directions: column;
+
+@each $direction in $directions {
+  .direction-#{$direction} {
+    flex-direction: $direction;
+  }
+}

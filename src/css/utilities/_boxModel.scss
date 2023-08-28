@@ -3,6 +3,7 @@ $box-sizes:(
   '10': 10px,
   '20': 20px,
   '30': 30px,
+  '35': 35px,
   '40': 40px,
   '50': 50px,
   '60': 60px,
@@ -44,7 +45,7 @@ $breakpoint in $map-viewports {
 
     @include create-mq($breakpoint, 'max') {
         .padding#{$modifier}-down {
-            padding: 0 20px !important;
+            padding: 40px !important;
         }
     }
 
