@@ -30,13 +30,13 @@ const Footer = () => {
                     <IconLink href="#" src={linkedinIcon} alt='Linkedin' className='icon' />
                     <IconLink href="#" src={behanceIcon} alt='Behance' className='icon' />
                 </div>
-                <a href="mailto:aletomasr@gmail.com" className='email'>aletomasr@gmail.com</a>
+                <a href="mailto:aletomasr@gmail.com" className='email font-size-md-h4'>aletomasr@gmail.com</a>
             </div>
             </div>
             <div className='footer_bottom'>
-            <div className='container d-flex justify-between wrap'>
-            <p className='developer_name'>Copyright © <span className='color-red'> Alejandro Ritta</span> 2023 </p>
-                <p className='developer_name'>{develope} Developed By<span className='color-red'> Gabriela Mancini</span> </p>
+            <div className='container d-flex justify-between wrap justify-md-center'>
+            <p className='developer_name font-size-md-14'>Copyright © <span className='color-red'> Alejandro Ritta</span> 2023 </p>
+                <p className='developer_name font-size-md-14'>{develope} Developed By<span className='color-red'> Gabriela Mancini</span> </p>
             </div>
             </div>
         </footer>
