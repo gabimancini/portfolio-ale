@@ -5,4 +5,16 @@ $background: stickyImg hamburgerImg cerrarImg bordeMenu hero_btn sticky_green st
     background: url("../assets/#{$img}.svg") no-repeat;
     background-size: cover;
   }
+  @each $modifier ,
+  $breakpoint in $map-viewports {
+    @if($modifier =='') {
+      $modifier: '-xs';
+    }
+
+    @include create-mq($breakpoint, 'max') {
+      .bg#{$modifier}-contain {
+        background-size: contain !important;
+      }
+    }
+  }
 }

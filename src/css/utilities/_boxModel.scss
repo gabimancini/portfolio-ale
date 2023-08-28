@@ -1,4 +1,5 @@
-$box-sizes:(
+$box-sizes: (
+  'auto': auto,
   '5' : 5px,
   '10': 10px,
   '20': 20px,
@@ -9,52 +10,59 @@ $box-sizes:(
   '60': 60px,
   '70': 70px,
   '100': 100px
-  );
-@each $padding, $padding-code in $box-sizes {
+);
+
+@each $padding,
+$padding-code in $box-sizes {
   .p-#{$padding} {
     padding: $padding-code;
   }
+
   .p-x-#{$padding} {
     padding-left: $padding-code;
     padding-right: $padding-code;
   }
+
   .p-y-#{$padding} {
     padding-top: $padding-code;
     padding-bottom: $padding-code;
   }
+
+  @each $modifier ,
+  $breakpoint in $map-viewports {
+    @include create-mq($breakpoint, 'max') {
+      .padding#{$modifier}-#{$padding} {
+        padding: $padding-code !important;
+      }
+    }
+  }
 }
 
-@each $margin, $margin-code in $box-sizes{
+@each $margin,
+$margin-code in $box-sizes {
   .m-#{$margin} {
     margin: $margin-code;
   }
+
   .m-x-#{$margin} {
     margin-left: $margin-code;
     margin-right: $margin-code;
   }
+
   .m-y-#{$margin} {
     margin-top: $margin-code;
     margin-bottom: $margin-code;
   }
+  @each $modifier ,
+  $breakpoint in $map-viewports {
+  @include create-mq($breakpoint, 'max') {
+    .m#{$modifier}-#{$margin} {
+      margin: $margin-code !important;
+    }
+  }
+  }
 }
-@each $modifier ,
-$breakpoint in $map-viewports {
-    @if($modifier =='') {
-        $modifier: '-xs';
-    }
 
-    @include create-mq($breakpoint, 'max') {
-        .padding#{$modifier}-down {
-            padding: 40px !important;
-        }
-    }
-
-    @include create-mq($breakpoint, 'min') {
-        .padding#{$modifier}-up {
-            padding: 0 20px !important;
-        }
-    }
-}
 $positions: relative, absolute;
 
 @each $position in $positions {
@@ -62,38 +70,61 @@ $positions: relative, absolute;
     position: $position;
   }
 }
-$displays: block flex inline-block  none;
+
+$displays: block flex inline-block none;
 
 @each $display in $displays {
   .d-#{$display} {
     display: $display;
   }
 }
+
 $sizes: (
   '100': 100px,
   '188': 188px,
   '200': 200px,
   '271': 271px,
-  '676': 676px
+  '676': 676px,
+  '50per': 50%
 );
-@each $size, $size-code in $sizes {
+
+@each $size,
+$size-code in $sizes {
   .w-#{$size} {
     width: $size-code;
   }
+
   .h-#{$size} {
     height: $size-code;
   }
+  @each $modifier ,
+$breakpoint in $map-viewports {
+  @if($modifier =='') {
+    $modifier: '-xs';
+  }
+
+  @include create-mq($breakpoint, 'max') {
+    .width#{$modifier}-#{$size} {
+      width: $size-code !important;
+    }
+    .height#{$modifier}-#{$size} {
+      height: $size-code !important;
+    }
+  }
+
 }
+}
+
 @each $modifier ,
 $breakpoint in $map-viewports {
-    @if($modifier =='') {
-        $modifier: '-xs';
-    }
+  @if($modifier =='') {
+    $modifier: '-xs';
+  }
 
-    @include create-mq($breakpoint, 'max') {
-        .width#{$modifier}-btn {
-            width: 126px !important;
-        }
+  @include create-mq($breakpoint, 'max') {
+    .width#{$modifier}-btn {
+      width: 126px !important;
     }
+  }
 
 }

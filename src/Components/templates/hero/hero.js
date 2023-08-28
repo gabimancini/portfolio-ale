@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <section id="hero">
 
-            <div className="container d-flex wrap position-relative justify-space-between p-x-40 p-y-100 padding-md-down">
+            <div className="container d-flex wrap position-relative justify-space-between p-x-40 p-y-100 padding-md-40">
                 <div className="container__col-sm-12 container__col-lg-6">
                 <TextWithArrow src={FlechaTitle} text="title" className="color-black-aplha-6 position-absolute d-flex align-center"/>
                     <h3 className="color-primary-black font-size-h3">Hello!</h3>
@@ -15,7 +15,7 @@ const Hero = () => {
                      I’m a UX Designer</h1>
                      <div className="d-flex justify-md-center p-y-30">
                      <Link to="/quote" className="bg-hero_btn p-20 m-10 w-188 text-center hidden-md-down">Quote your design</Link>
-                     <Link to="/contact" className="bg-hero_btn p-20 m-10 w-188 text-center width-md-btn ">Contact me</Link>
+                     <Link to="/contact" className="bg-hero_btn p-20 m-10 w-188 text-center width-md-btn bg-md-contain padding-md-10">Contact me</Link>
                      </div>
                 </div>
                 <div className="container__col-sm-12 container__col-lg-5 d-flex">

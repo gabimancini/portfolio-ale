@@ -12,20 +12,21 @@ $justifies: center space-between space-around;
   .justify-#{$justify} {
     justify-content: $justify;
   }
-}
-@each $modifier ,
-$breakpoint in $map-viewports {
+
+  @each $modifier ,
+  $breakpoint in $map-viewports {
     @if($modifier =='') {
-        $modifier: '-xs';
+      $modifier: '-xs';
     }
 
     @include create-mq($breakpoint, 'max') {
-        .justify#{$modifier}-center {
-            justify-content: center !important;
-        }
+      .justify#{$modifier}-#{$justify} {
+        justify-content: $justify !important;
+      }
     }
-
+  }
 }
+
 $aligns: start center end;
 
 @each $align in $aligns {
@@ -41,16 +42,17 @@ $directions: column;
     flex-direction: $direction;
   }
 }
+
 @each $modifier ,
 $breakpoint in $map-viewports {
-    @if($modifier =='') {
-        $modifier: '-xs';
-    }
+  @if($modifier =='') {
+    $modifier: '-xs';
+  }
 
-    @include create-mq($breakpoint, 'max') {
-        .direction#{$modifier}-col {
-            flex-direction: column !important;
-        }
+  @include create-mq($breakpoint, 'max') {
+    .direction#{$modifier}-col {
+      flex-direction: column !important;
     }
+  }
 
 }

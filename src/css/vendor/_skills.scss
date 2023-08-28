@@ -9,5 +9,10 @@
    
 }
 .sticky_skills{
-    max-width: 33%;
+    width: 33%;
+}
+@media (max-width: 678px) {
+    .sticky_kill{
+        order: 1;
+    }
 }
