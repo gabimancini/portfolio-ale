@@ -84,3 +84,16 @@ $sizes: (
     height: $size-code;
   }
 }
+@each $modifier ,
+$breakpoint in $map-viewports {
+    @if($modifier =='') {
+        $modifier: '-xs';
+    }
+
+    @include create-mq($breakpoint, 'max') {
+        .width#{$modifier}-btn {
+            width: 126px !important;
+        }
+    }
+
+}

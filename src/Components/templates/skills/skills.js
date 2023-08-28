@@ -22,7 +22,7 @@ const Skills = () => {
     return (
         <section id="skills">
             <div className="container d-flex p-y-100 p-x-20 wrap justify-space-between">
-                <div className="container__col-lg-6 d-flex align-center wrap">
+                <div className="container__col-lg-6 d-flex align-center wrap direction-md-col">
                     {Stickies.map((sticky, index) => (
                         <Sticky key={index} title={sticky.title} text={sticky.text} className={`bg-${sticky.bg} sticky_skills h-200 p-10 font-size-1`} />
                     )
