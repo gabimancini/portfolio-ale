@@ -24,14 +24,14 @@ const Nav = () => {
             <HashLink to="/#about"> About me</HashLink>
             <Link to="/projects"> Projects</Link>
             <a href="./assets/about.svg" download="My CV"> Download CV</a>
-                <div className="d-flex direction-column align-center">
-                <h3>Follow me</h3>
+                <div className="d-flex direction-md-col align-center">
+                <h3 className="hidden-md-up">Follow me</h3>
                 <div className="text-center"> 
                     <IconLink href="#" src={instagramIcon} alt='Instagram' className='icon' />
                     <IconLink href="#" src={linkedinIcon} alt='Linkedin' className='icon' />
                     <IconLink href="#" src={behanceIcon} alt='Behance' className='icon' />
                     </div>
-                    <a href="mailto: aletomasr@gmail.com">aletomasr@gmail.com</a>
+                    <a href="mailto: aletomasr@gmail.com" className="hidden-md-up">aletomasr@gmail.com</a>
                     </div>
                 <TextWithArrow src={flechaIconsImg} text="social icons" className="social color-black-aplha-6" />
             </ul>

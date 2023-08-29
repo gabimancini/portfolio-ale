@@ -5,7 +5,7 @@ import './header.css';
 const Header = () => {
     return (
         <header>
-        <div className="container p-x-35 p-y-20">
+        <div className="container p-y-20 padding-md-40">
             <Logo />
             <Nav />
             </div>
