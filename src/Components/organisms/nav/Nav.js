@@ -23,7 +23,7 @@ const Nav = () => {
             <Link to="/">Home</Link>
             <HashLink to="/#about"> About me</HashLink>
             <Link to="/projects"> Projects</Link>
-            <a href="./assets/about.svg" download="My CV"> Download CV</a>
+            <a href="./assets/Alejandro_Ritta_CV_resume.pdf" download> Download CV</a>
                 <div className="d-flex direction-md-col align-center">
                 <h3 className="hidden-md-up">Follow me</h3>
                 <div className="text-center"> 
