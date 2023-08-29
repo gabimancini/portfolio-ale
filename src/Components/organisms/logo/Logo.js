@@ -7,7 +7,7 @@ const Logo = () => {
     return (
         <div className="logo_container">
             <Img src={logoImg} alt="Logo" />
-            <TextWithArrow src={flechaLogoImg} text="Logo" className="color-black-aplha-6"/>
+            <TextWithArrow src={flechaLogoImg} text="Logo" className="color-black-aplha-6 align-center"/>
         </div>
     )
 }

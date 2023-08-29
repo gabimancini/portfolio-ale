@@ -10,7 +10,8 @@ $box-sizes: (
   '50': 50px,
   '60': 60px,
   '70': 70px,
-  '100': 100px
+  '100': 100px,
+  '200': 200px
 );
 
 @each $padding,
@@ -53,6 +54,12 @@ $margin-code in $box-sizes {
   .m-y-#{$margin} {
     margin-top: $margin-code;
     margin-bottom: $margin-code;
+  }
+  .top-#{$margin}{
+    top: $margin-code;
+  }
+  .left-#{$margin}{
+    left: $margin-code;
   }
   @each $modifier ,
   $breakpoint in $map-viewports {

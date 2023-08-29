@@ -15,7 +15,7 @@ const Nav = () => {
 
     return (
         <nav className=" ">
-            <TextWithArrow src={flechaBarraImg} text="nav bar" className="color-black-aplha-6"/>
+            <TextWithArrow src={flechaBarraImg} text="nav bar" className="color-black-aplha-6 align-end"/>
 
                <Button onClick={()=>setIsOpen(!isOpen)} className="hamburger bg-hamburgerImg" id={`${isOpen && "open"}`} />
  
@@ -23,7 +23,7 @@ const Nav = () => {
             <Link to="/">Home</Link>
             <HashLink to="/#about"> About me</HashLink>
             <Link to="/projects"> Projects</Link>
-            <a href="./assets/Alejandro_Ritta_CV_resume.pdf" download> Download CV</a>
+            <a href="Alejandro_Ritta_CV_resume.pdf" download> Download CV</a>
                 <div className="d-flex direction-md-col align-center">
                 <h3 className="hidden-md-up">Follow me</h3>
                 <div className="text-center"> 

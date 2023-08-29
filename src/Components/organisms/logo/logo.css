@@ -1,4 +1,4 @@
-.logo_container img{
+.logo_container >img{
     max-width: 120px;
 }
 .logo_container{
@@ -7,7 +7,7 @@
 }
  
 @media screen and (min-width: 879px){
-    .logo_container img{
+    .logo_container >img{
         max-width: 100%;
     }
 }
