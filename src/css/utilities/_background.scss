@@ -11,7 +11,7 @@ $background: stickyImg hamburgerImg cerrarImg bordeMenu hero_btn sticky_green st
       $modifier: '-xs';
     }
 
-    @include create-mq($breakpoint, 'max') {
+    @include create-mq($breakpoint, 'min') {
       .bg#{$modifier}-contain {
         background-size: contain !important;
       }

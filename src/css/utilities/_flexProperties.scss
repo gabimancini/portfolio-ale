@@ -49,9 +49,12 @@ $breakpoint in $map-viewports {
     $modifier: '-xs';
   }
 
-  @include create-mq($breakpoint, 'max') {
+  @include create-mq($breakpoint, 'min') {
     .direction#{$modifier}-col {
       flex-direction: column !important;
+    }
+    .direction#{$modifier}-row {
+      flex-direction: row !important;
     }
   }
 

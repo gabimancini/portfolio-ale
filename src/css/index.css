@@ -8,12 +8,12 @@
   display: none !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .hidden-sm-down {
     display: none !important;
   }
 }
-@media screen and (min-width: 412px) {
+@media screen and (min-width: 312px) {
   .hidden-sm-up {
     display: none !important;
   }
@@ -66,7 +66,7 @@
   padding: auto !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .padding-sm-auto {
     padding: auto !important;
   }
@@ -104,7 +104,7 @@
   padding: 0 !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .padding-sm-0 {
     padding: 0 !important;
   }
@@ -142,7 +142,7 @@
   padding: 5px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .padding-sm-5 {
     padding: 5px !important;
   }
@@ -180,7 +180,7 @@
   padding: 10px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .padding-sm-10 {
     padding: 10px !important;
   }
@@ -218,7 +218,7 @@
   padding: 20px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .padding-sm-20 {
     padding: 20px !important;
   }
@@ -256,7 +256,7 @@
   padding: 30px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .padding-sm-30 {
     padding: 30px !important;
   }
@@ -294,7 +294,7 @@
   padding: 35px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .padding-sm-35 {
     padding: 35px !important;
   }
@@ -332,7 +332,7 @@
   padding: 40px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .padding-sm-40 {
     padding: 40px !important;
   }
@@ -370,7 +370,7 @@
   padding: 50px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .padding-sm-50 {
     padding: 50px !important;
   }
@@ -408,7 +408,7 @@
   padding: 60px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .padding-sm-60 {
     padding: 60px !important;
   }
@@ -446,7 +446,7 @@
   padding: 70px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .padding-sm-70 {
     padding: 70px !important;
   }
@@ -484,7 +484,7 @@
   padding: 100px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .padding-sm-100 {
     padding: 100px !important;
   }
@@ -522,7 +522,7 @@
   padding: 200px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .padding-sm-200 {
     padding: 200px !important;
   }
@@ -572,7 +572,7 @@
   margin: auto !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .m-sm-auto {
     margin: auto !important;
   }
@@ -622,7 +622,7 @@
   margin: 0 !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .m-sm-0 {
     margin: 0 !important;
   }
@@ -672,7 +672,7 @@
   margin: 5px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .m-sm-5 {
     margin: 5px !important;
   }
@@ -722,7 +722,7 @@
   margin: 10px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .m-sm-10 {
     margin: 10px !important;
   }
@@ -772,7 +772,7 @@
   margin: 20px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .m-sm-20 {
     margin: 20px !important;
   }
@@ -822,7 +822,7 @@
   margin: 30px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .m-sm-30 {
     margin: 30px !important;
   }
@@ -872,7 +872,7 @@
   margin: 35px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .m-sm-35 {
     margin: 35px !important;
   }
@@ -922,7 +922,7 @@
   margin: 40px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .m-sm-40 {
     margin: 40px !important;
   }
@@ -972,7 +972,7 @@
   margin: 50px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .m-sm-50 {
     margin: 50px !important;
   }
@@ -1022,7 +1022,7 @@
   margin: 60px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .m-sm-60 {
     margin: 60px !important;
   }
@@ -1072,7 +1072,7 @@
   margin: 70px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .m-sm-70 {
     margin: 70px !important;
   }
@@ -1122,7 +1122,7 @@
   margin: 100px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .m-sm-100 {
     margin: 100px !important;
   }
@@ -1172,7 +1172,7 @@
   margin: 200px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .m-sm-200 {
     margin: 200px !important;
   }
@@ -1232,7 +1232,7 @@
   height: 37px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .width-sm-37 {
     width: 37px !important;
   }
@@ -1280,7 +1280,7 @@
   height: 100px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .width-sm-100 {
     width: 100px !important;
   }
@@ -1328,7 +1328,7 @@
   height: 185px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .width-sm-185 {
     width: 185px !important;
   }
@@ -1376,7 +1376,7 @@
   height: 188px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .width-sm-188 {
     width: 188px !important;
   }
@@ -1424,7 +1424,7 @@
   height: 263px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .width-sm-263 {
     width: 263px !important;
   }
@@ -1472,7 +1472,7 @@
   height: 271px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .width-sm-271 {
     width: 271px !important;
   }
@@ -1520,7 +1520,7 @@
   height: 676px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .width-sm-676 {
     width: 676px !important;
   }
@@ -1568,7 +1568,7 @@
   height: 50% !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .width-sm-50per {
     width: 50% !important;
   }
@@ -1604,7 +1604,7 @@
   width: 126px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .width-sm-btn {
     width: 126px !important;
   }
@@ -1674,7 +1674,7 @@ p {
   justify-content: center !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .justify-sm-center {
     justify-content: center !important;
   }
@@ -1702,7 +1702,7 @@ p {
   justify-content: space-between !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .justify-sm-space-between {
     justify-content: space-between !important;
   }
@@ -1730,7 +1730,7 @@ p {
   justify-content: space-around !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .justify-sm-space-around {
     justify-content: space-around !important;
   }
@@ -1770,24 +1770,40 @@ p {
   flex-direction: column !important;
 }
 
-@media screen and (max-width: 412px) {
+.direction-xs-row {
+  flex-direction: row !important;
+}
+
+@media screen and (min-width: 312px) {
   .direction-sm-col {
     flex-direction: column !important;
   }
+  .direction-sm-row {
+    flex-direction: row !important;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .direction-md-col {
     flex-direction: column !important;
   }
+  .direction-md-row {
+    flex-direction: row !important;
+  }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .direction-lg-col {
     flex-direction: column !important;
   }
+  .direction-lg-row {
+    flex-direction: row !important;
+  }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .direction-xl-col {
     flex-direction: column !important;
+  }
+  .direction-xl-row {
+    flex-direction: row !important;
   }
 }
 .container {
@@ -1869,7 +1885,7 @@ p {
 .container__col-offset-12 {
   margin-left: 100%;
 }
-@media screen and (min-width: 412px) {
+@media screen and (min-width: 312px) {
   .container__col-sm-offset-0 {
     margin-left: 0;
   }
@@ -2219,7 +2235,7 @@ body {
   font-size: clamp(34px, 5.7vw, 68px) !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .font-size-sm-h1 {
     font-size: clamp(34px, 5.7vw, 68px) !important;
   }
@@ -2247,7 +2263,7 @@ body {
   font-size: clamp(32px, -0.875rem + 8.333vw, 42px) !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .font-size-sm-h2 {
     font-size: clamp(32px, -0.875rem + 8.333vw, 42px) !important;
   }
@@ -2275,7 +2291,7 @@ body {
   font-size: clamp(18px, -0.875rem + 8.333vw, 42px) !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .font-size-sm-h3 {
     font-size: clamp(18px, -0.875rem + 8.333vw, 42px) !important;
   }
@@ -2303,7 +2319,7 @@ body {
   font-size: clamp(18px, -0.875rem + 8.333vw, 24px) !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .font-size-sm-h4 {
     font-size: clamp(18px, -0.875rem + 8.333vw, 24px) !important;
   }
@@ -2331,7 +2347,7 @@ body {
   font-size: clamp(14px, 2.5vw, 18px) !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .font-size-sm-paragraph {
     font-size: clamp(14px, 2.5vw, 18px) !important;
   }
@@ -2359,7 +2375,7 @@ body {
   font-size: 14px !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .font-size-sm-14 {
     font-size: 14px !important;
   }
@@ -2387,7 +2403,7 @@ body {
   font-size: 0.8em !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .font-size-sm-15 {
     font-size: 0.8em !important;
   }
@@ -2415,7 +2431,7 @@ body {
   font-size: 1.5em !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .font-size-sm-1_5 {
     font-size: 1.5em !important;
   }
@@ -2443,7 +2459,7 @@ body {
   font-size: 1em !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .font-size-sm-1 {
     font-size: 1em !important;
   }
@@ -2471,7 +2487,7 @@ body {
   text-align: left !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .text-sm-left {
     text-align: left !important;
   }
@@ -2499,7 +2515,7 @@ body {
   text-align: right !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .text-sm-right {
     text-align: right !important;
   }
@@ -2527,7 +2543,7 @@ body {
   text-align: center !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 312px) {
   .text-sm-center {
     text-align: center !important;
   }
@@ -2556,22 +2572,22 @@ body {
   background-size: contain !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (min-width: 312px) {
   .bg-sm-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .bg-md-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .bg-lg-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .bg-xl-contain {
     background-size: contain !important;
   }
@@ -2585,22 +2601,22 @@ body {
   background-size: contain !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (min-width: 312px) {
   .bg-sm-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .bg-md-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .bg-lg-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .bg-xl-contain {
     background-size: contain !important;
   }
@@ -2614,22 +2630,22 @@ body {
   background-size: contain !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (min-width: 312px) {
   .bg-sm-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .bg-md-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .bg-lg-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .bg-xl-contain {
     background-size: contain !important;
   }
@@ -2643,22 +2659,22 @@ body {
   background-size: contain !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (min-width: 312px) {
   .bg-sm-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .bg-md-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .bg-lg-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .bg-xl-contain {
     background-size: contain !important;
   }
@@ -2672,22 +2688,22 @@ body {
   background-size: contain !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (min-width: 312px) {
   .bg-sm-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .bg-md-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .bg-lg-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .bg-xl-contain {
     background-size: contain !important;
   }
@@ -2701,22 +2717,22 @@ body {
   background-size: contain !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (min-width: 312px) {
   .bg-sm-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .bg-md-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .bg-lg-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .bg-xl-contain {
     background-size: contain !important;
   }
@@ -2730,22 +2746,22 @@ body {
   background-size: contain !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (min-width: 312px) {
   .bg-sm-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .bg-md-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .bg-lg-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .bg-xl-contain {
     background-size: contain !important;
   }
@@ -2759,22 +2775,22 @@ body {
   background-size: contain !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (min-width: 312px) {
   .bg-sm-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .bg-md-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .bg-lg-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .bg-xl-contain {
     background-size: contain !important;
   }
@@ -2788,22 +2804,22 @@ body {
   background-size: contain !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (min-width: 312px) {
   .bg-sm-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .bg-md-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .bg-lg-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .bg-xl-contain {
     background-size: contain !important;
   }
@@ -2817,22 +2833,22 @@ body {
   background-size: contain !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (min-width: 312px) {
   .bg-sm-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .bg-md-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .bg-lg-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .bg-xl-contain {
     background-size: contain !important;
   }
@@ -2846,22 +2862,22 @@ body {
   background-size: contain !important;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (min-width: 312px) {
   .bg-sm-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .bg-md-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .bg-lg-contain {
     background-size: contain !important;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .bg-xl-contain {
     background-size: contain !important;
   }

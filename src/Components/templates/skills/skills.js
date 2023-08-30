@@ -21,8 +21,8 @@ const Skills = () => {
     const List = ["Figma  100%", "Justinmind  80%", "Agile methodology 90%", "Adobe XD 100%", "Lenguage 60% ", "Google Presentation 100%"]
     return (
         <section id="skills">
-            <div className="container d-flex p-y-100 p-x-20 wrap justify-space-between padding-md-10 justify-md-center">
-                <div className="container__col-lg-6 d-flex align-center direction-sm-col sticky_kill m-y-20">
+            <div className="container d-flex p-y-100 p-x-20 direction-sm-col direction-md-row justify-space-between padding-md-10 justify-sm-center">
+                <div className="container__col-lg-6 d-flex align-center direction-sm-col direction-md-row sticky_kill m-y-20">
                     {Stickies.map((sticky, index) => (
                         <Sticky key={index} title={sticky.title} text={sticky.text} className={`bg-${sticky.bg} sticky_skills h-263 p-10 font-size-1 m-y-10 width-md-271 padding-md-40`} />
                     )
