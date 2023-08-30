@@ -4,3 +4,8 @@ header .container{
     justify-content: space-between; 
     position: relative;
 }
+@media (max-width: 412px) {
+    header .container{
+        padding: 40px 20px;
+}
+}
