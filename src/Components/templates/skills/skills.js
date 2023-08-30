@@ -35,8 +35,8 @@ const Skills = () => {
                     </ul>
                 </div>
             </div>
-            <div className="container d-flex p-y-20 justify-center">
-                <a href="Alejandro_Ritta_CV_resume.pdf" download className="bg-btn_download bg-sm-contain w-185 h-37 align-center"> Download CV</a>
+            <div className="container d-flex p-y-20 justify-center ">
+                <a href="Alejandro_Ritta_CV_resume.pdf" download className="bg-btn_download bg-sm-contain w-185 h-37 d-flex justify-center align-center"> Download CV</a>
             </div>
         </section>
     )

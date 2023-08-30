@@ -55,6 +55,9 @@ $margin-code in $box-sizes {
     margin-top: $margin-code;
     margin-bottom: $margin-code;
   }
+  .m-t-#{$margin} {
+    margin-top: $margin-code;
+  }
   .top-#{$margin}{
     top: $margin-code;
   }

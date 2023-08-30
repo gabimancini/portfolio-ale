@@ -8,29 +8,29 @@ import '../../../css/index.css';
 const Footer = () => {
     const develope = '</>';
     return (
-        <footer>
+        <footer className='m-t-70'>
         <div className='container p-x-20 p-y-40'>
             <div className="footer_inner">
                 <h2 className='color-blue font-size-h2'>Alejandro Ritta</h2>
                 <p className='color-black-aplha-5'>
                 UX Design: the perfect combination of aesthetics and functionality to create memorable user experiences.                </p>
             </div>
-            <div className="footer_inner m-y-10">
-                <h3 className='font-size-h3'>Pages</h3>
-                <ul className='m-x-20'>
-                    <List href='#' variant='nav' text='About me' />
-                    <List href='#' variant='nav' text='Projects' />
-                    <List href='#' variant='nav' text='Contact me' />
+            <div className="footer_inner m-t-20">
+                <h3 className='font-size-h3 '>Pages</h3>
+                <ul className='m-x-20 m-y-10'>
+                    <List href='#' variant='nav' text='About me' className='m-y-10'/>
+                    <List href='#' variant='nav' text='Projects' className='m-y-10'/>
+                    <List href='#' variant='nav' text='Contact me' className='m-y-10' />
                 </ul>
             </div>
-            <div className="footer_inner">
+            <div className="footer_inner m-t-20">
                 <h3 className='font-size-h3'>Follow me</h3>
                 <div className='m-x-20'>
                     <IconLink href="#" src={instagramIcon} alt='Instagram' className='icon' />
                     <IconLink href="#" src={linkedinIcon} alt='Linkedin' className='icon' />
                     <IconLink href="#" src={behanceIcon} alt='Behance' className='icon' />
                 </div>
-                <a href="mailto:aletomasr@gmail.com" className='email font-size-md-h4 m-x-20'>aletomasr@gmail.com</a>
+                <a href="mailto:aletomasr@gmail.com" className='email font-size-paragraph m-x-20'>aletomasr@gmail.com</a>
             </div>
             </div>
             <div className='footer_bottom'>
