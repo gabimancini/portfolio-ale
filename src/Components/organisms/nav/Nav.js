@@ -31,7 +31,7 @@ const Nav = () => {
                     <IconLink href="#" src={linkedinIcon} alt='Linkedin' className='icon' />
                     <IconLink href="#" src={behanceIcon} alt='Behance' className='icon' />
                     </div>
-                    <a href="mailto: aletomasr@gmail.com" className="hidden-md-up">aletomasr@gmail.com</a>
+                    <a href="mailto: aletomasr@gmail.com" className="hidden-lg-up">aletomasr@gmail.com</a>
                     </div>
                 <TextWithArrow src={flechaIconsImg} text="social icons" className="social color-black-aplha-6" />
             </ul>
