@@ -12,7 +12,7 @@ const Footer = () => {
         <div className='container p-x-20 p-y-40'>
             <div className="footer_inner">
                 <h2 className='color-blue font-size-h2'>Alejandro Ritta</h2>
-                <p>
+                <p className='color-black-aplha-5'>
                 UX Design: the perfect combination of aesthetics and functionality to create memorable user experiences.                </p>
             </div>
             <div className="footer_inner">
@@ -35,8 +35,8 @@ const Footer = () => {
             </div>
             <div className='footer_bottom'>
             <div className='container d-flex justify-between wrap justify-md-center'>
-            <p className='developer_name font-size-md-14'>Copyright © <span className='color-red'> Alejandro Ritta</span> 2023 </p>
-                <p className='developer_name font-size-md-14'>{develope} Developed By<span className='color-red'> Gabriela Mancini</span> </p>
+            <p className='developer_name font-size-md-14'>Copyright © <span className='color-red'> Alejandro Ritta</span> 2023  </p>
+                <p className='developer_name font-size-md-14'> {develope} Developed By<span className='color-red'> Gabriela Mancini</span> </p>
             </div>
             </div>
         </footer>

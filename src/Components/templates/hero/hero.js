@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <section id="hero">
 
-            <div className="container d-flex wrap position-relative justify-space-between p-x-40 p-y-100 padding-md-40">
+            <div className="container d-flex wrap position-relative justify-space-between p-x-40 p-y-100 padding-md-20">
                 <div className="container__col-sm-12 container__col-lg-6">
                 <TextWithArrow src={FlechaTitle} text="title" className="color-black-aplha-6 position-absolute d-flex align-start top-40 left-200"/>
                     <h3 className="color-primary-black font-size-h3">Hello!</h3>

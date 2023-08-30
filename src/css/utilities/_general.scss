@@ -21,3 +21,12 @@ a {
 img {
   max-width: 100%;
 }
+p{
+  letter-spacing: 0.7px;
+  line-height: 28px;
+}
+@media  (max-width: 1440px){
+  p{
+    line-height: 34px;
+  }
+}
