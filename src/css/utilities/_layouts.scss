@@ -8,6 +8,10 @@ $flex__cols: 12;
         }
 
         @for $i from 1 through $flex-cols {
+            &__col#{$modifier}-#{$i} {
+                flex-basis: calc((100 / ($flex-cols / $i)) * 1%);
+            }
+
             &__col#{$modifier}-offset-#{$i} {
                 margin-left: calc((100 / ($flex-cols / $i)) * 1%);
             }

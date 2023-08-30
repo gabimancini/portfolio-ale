@@ -21,19 +21,22 @@ const Skills = () => {
     const List = ["Figma  100%", "Justinmind  80%", "Agile methodology 90%", "Adobe XD 100%", "Lenguage 60% ", "Google Presentation 100%"]
     return (
         <section id="skills">
-            <div className="container d-flex p-y-100 p-x-20 wrap justify-space-between padding-md-10">
-                <div className="container__col-lg-6 d-flex align-center wrap direction-md-col sticky_kill m-md-auto">
+            <div className="container d-flex p-y-100 p-x-20 wrap justify-space-between padding-md-10 justify-md-center">
+                <div className="container__col-lg-6 d-flex align-center wrap direction-md-col sticky_kill m-y-20">
                     {Stickies.map((sticky, index) => (
-                        <Sticky key={index} title={sticky.title} text={sticky.text} className={`bg-${sticky.bg} sticky_skills h-263 p-10 font-size-1 m-y-10 width-md-271 padding-md-40 container__col-sm-12`} />
+                        <Sticky key={index} title={sticky.title} text={sticky.text} className={`bg-${sticky.bg} sticky_skills h-263 p-10 font-size-1 m-y-10 width-md-271 padding-md-40`} />
                     )
                     )}
                 </div>
                 <div className="container__col-lg-5">
-                <h2 className="font-size-h2 text-md-center m-y-10">My skills</h2>
+                    <h2 className="font-size-h2 text-md-center m-y-10">My skills</h2>
                     <ul className="d-flex wrap m-y-10">
-                        {List.map((item, index)=><li key={index} className="skills_list font-size-1_5 p-10 w-50per font-size-md-14 padding-md-0 m-y-10">{item}</li>)}
+                        {List.map((item, index) => <li key={index} className="skills_list font-size-1_5 p-10 w-50per font-size-md-14 padding-md-0 m-y-10">{item}</li>)}
                     </ul>
                 </div>
+            </div>
+            <div className="container d-flex p-y-20 justify-center">
+                <a href="Alejandro_Ritta_CV_resume.pdf" download className="bg-btn_download bg-sm-contain w-185 h-37 align-center"> Download CV</a>
             </div>
         </section>
     )

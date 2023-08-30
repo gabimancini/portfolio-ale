@@ -1,4 +1,4 @@
-$background: stickyImg hamburgerImg cerrarImg bordeMenu hero_btn sticky_green sticky_blue sticky_yellow browser1 browser2;
+$background: stickyImg hamburgerImg cerrarImg bordeMenu hero_btn sticky_green sticky_blue sticky_yellow browser1 browser2 btn_download;
 
 @each $img in $background {
   .bg-#{$img} {
