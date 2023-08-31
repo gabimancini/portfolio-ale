@@ -24,7 +24,7 @@ const Nav = () => {
             <HashLink to="/#about"> About me</HashLink>
             <Link to="/projects"> Projects</Link>
             <a href="Alejandro_Ritta_CV_resume.pdf" download> Download CV</a>
-                <div className="d-flex direction-md-col align-center">
+                <div className="d-flex direction-column align-center">
                 <h3 className="hidden-md-up">Follow me</h3>
                 <div className="text-center"> 
                     <IconLink href="#" src={instagramIcon} alt='Instagram' className='icon' />

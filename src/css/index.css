@@ -1750,6 +1750,34 @@ p {
     justify-content: space-around !important;
   }
 }
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-xs-space-evenly {
+  justify-content: space-evenly !important;
+}
+
+@media screen and (max-width: 312px) {
+  .justify-sm-space-evenly {
+    justify-content: space-evenly !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .justify-md-space-evenly {
+    justify-content: space-evenly !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .justify-lg-space-evenly {
+    justify-content: space-evenly !important;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .justify-xl-space-evenly {
+    justify-content: space-evenly !important;
+  }
+}
 .align-start {
   align-items: start;
 }
@@ -2951,13 +2979,23 @@ button {
 }
 
 .sticky_skills {
-  width: 33%;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
 @media (max-width: 678px) {
   .sticky_kill {
     order: 1;
+  }
+}
+@media (min-width: 678px) {
+  .sticky_skills {
+    width: 187px;
+    height: 179px;
+    padding: 12px;
+  }
+  .sticky_skills p {
+    line-height: normal;
+    font-size: 15px;
   }
 }
 .card {
