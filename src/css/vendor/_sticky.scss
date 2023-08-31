@@ -8,15 +8,15 @@
          .sticky {
              display: block;
              background-size: contain;
-             height: 400px;
-             width: 200px;
+             height: 140px;
+             width: 127px;
              right: 0;
              text-align: center;
-             top: 50px;
+             top:0;
 
              p {
                  color: rgba(0, 0, 0, 0.50);
-                 font-size: 24px;
+                 font-size: 18px;
                  transform: rotate(-2.516deg);
                  margin-top: 40px;
              }
@@ -26,4 +26,14 @@
              }
          }
      }
+ }
+ @media screen and (min-width: 1440px) {
+    .sticky { 
+        height: 400px;
+        width: 200px;
+        top: 50px;
+        p{
+            font-size: 24px;
+        }
+    }
  }

@@ -2,7 +2,6 @@ $box-sizes: (
   'auto': auto,
   '0': 0,
   '5' : 5px,
-  '10': 10px,
   '20': 20px,
   '30': 30px,
   '35': 35px,
@@ -11,7 +10,8 @@ $box-sizes: (
   '60': 60px,
   '70': 70px,
   '100': 100px,
-  '200': 200px
+  '200': 200px,
+  '10': 10px,
 );
 
 @each $padding,
@@ -32,7 +32,7 @@ $padding-code in $box-sizes {
 
   @each $modifier ,
   $breakpoint in $map-viewports {
-    @include create-mq($breakpoint, 'max') {
+    @include create-mq($breakpoint, 'min') {
       .padding#{$modifier}-#{$padding} {
         padding: $padding-code !important;
       }
@@ -66,9 +66,15 @@ $margin-code in $box-sizes {
   }
   @each $modifier ,
   $breakpoint in $map-viewports {
-  @include create-mq($breakpoint, 'max') {
+  @include create-mq($breakpoint, 'min') {
     .m#{$modifier}-#{$margin} {
       margin: $margin-code !important;
+    }
+    .m-t#{$modifier}-#{$margin} {
+      margin-top: $margin-code !important;
+    }
+    .top#{$modifier}-#{$margin}{
+      top: $margin-code !important;
     }
   }
   }
@@ -94,11 +100,14 @@ $sizes: (
   '37': 37px,
   '100': 100px,
   '185': 185px,
-  '188': 188px,
+  '243': 243px,
+  '248': 248px,
   '263': 263px,
   '271': 271px,
   '676': 676px,
-  '50per': 50%
+  '50per': 50%,
+  '181': 181px,
+  '188': 188px,
 );
 
 @each $size,
@@ -116,12 +125,12 @@ $breakpoint in $map-viewports {
     $modifier: '-xs';
   }
 
-  @include create-mq($breakpoint, 'max') {
+  @include create-mq($breakpoint, 'min') {
     .width#{$modifier}-#{$size} {
-      width: $size-code !important;
+      width: $size-code;
     }
     .height#{$modifier}-#{$size} {
-      height: $size-code !important;
+      height: $size-code;
     }
   }
 
@@ -134,7 +143,7 @@ $breakpoint in $map-viewports {
     $modifier: '-xs';
   }
 
-  @include create-mq($breakpoint, 'max') {
+  @include create-mq($breakpoint, 'min') {
     .width#{$modifier}-btn {
       width: 126px !important;
     }

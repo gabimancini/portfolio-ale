@@ -19,7 +19,7 @@ $justifies: center space-between space-around space-evenly;
       $modifier: '-xs';
     }
 
-    @include create-mq($breakpoint, 'max') {
+    @include create-mq($breakpoint, 'min') {
       .justify#{$modifier}-#{$justify} {
         justify-content: $justify !important;
       }

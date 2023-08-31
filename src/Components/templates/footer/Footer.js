@@ -15,7 +15,7 @@ const Footer = () => {
                 <p className='color-black-aplha-5'>
                 UX Design: the perfect combination of aesthetics and functionality to create memorable user experiences.                </p>
             </div>
-            <div className="footer_inner m-t-20">
+            <div className="footer_inner m-t-sm-20 m-t-md-0">
                 <h3 className='font-size-h3 '>Pages</h3>
                 <ul className='m-x-20 m-y-10'>
                     <List href='#' variant='nav' text='About me' className='m-y-10'/>
@@ -23,7 +23,7 @@ const Footer = () => {
                     <List href='#' variant='nav' text='Contact me' className='m-y-10' />
                 </ul>
             </div>
-            <div className="footer_inner m-t-20">
+            <div className="footer_inner m-t-sm-20 m-t-md-0">
                 <h3 className='font-size-h3'>Follow me</h3>
                 <div className='m-x-20'>
                     <IconLink href="#" src={instagramIcon} alt='Instagram' className='icon' />
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
             </div>
             <div className='footer_bottom'>
-            <div className='container d-flex justify-between wrap justify-md-center'>
+            <div className='container d-flex wrap justify-center'>
             <p className='developer_name font-size-md-14'>Copyright © <span className='color-red'> Alejandro Ritta</span> 2023  </p>
                 <p className='developer_name font-size-md-14'> {develope} Developed By<span className='color-red'> Gabriela Mancini</span> </p>
             </div>
