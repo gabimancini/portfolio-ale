@@ -6,7 +6,7 @@ $wraps: wrap no-wrap;
   }
 }
 
-$justifies: center start space-between space-around space-evenly;
+$justifies: center end start space-between space-around space-evenly;
 
 @each $justify in $justifies {
   .justify-#{$justify} {

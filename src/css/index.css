@@ -3467,6 +3467,54 @@
     height: 271px;
   }
 }
+.w-400 {
+  width: 400px;
+}
+
+.h-400 {
+  height: 400px;
+}
+
+.width-xs-400 {
+  width: 400px;
+}
+
+.height-xs-400 {
+  height: 400px;
+}
+
+@media screen and (min-width: 312px) {
+  .width-sm-400 {
+    width: 400px;
+  }
+  .height-sm-400 {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .width-md-400 {
+    width: 400px;
+  }
+  .height-md-400 {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .width-lg-400 {
+    width: 400px;
+  }
+  .height-lg-400 {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .width-xl-400 {
+    width: 400px;
+  }
+  .height-xl-400 {
+    height: 400px;
+  }
+}
 .w-676 {
   width: 676px;
 }
@@ -3751,6 +3799,34 @@ p {
 @media screen and (min-width: 1440px) {
   .justify-xl-center {
     justify-content: center !important;
+  }
+}
+.justify-end {
+  justify-content: end;
+}
+
+.justify-xs-end {
+  justify-content: end !important;
+}
+
+@media screen and (min-width: 312px) {
+  .justify-sm-end {
+    justify-content: end !important;
+  }
+}
+@media screen and (min-width: 767px) {
+  .justify-md-end {
+    justify-content: end !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .justify-lg-end {
+    justify-content: end !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .justify-xl-end {
+    justify-content: end !important;
   }
 }
 .justify-start {
@@ -5107,6 +5183,9 @@ button {
 }
 .card {
   background-size: contain;
+}
+.card .card_img {
+  z-index: -1;
 }
 
 nav {
