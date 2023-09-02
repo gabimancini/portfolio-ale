@@ -36,7 +36,7 @@ $font-code in $font-sizes {
   }
 }
 
-$aligns : left right center;
+$aligns : center left right;
 
 @each $align in $aligns {
   .text-#{$align} {
@@ -48,7 +48,7 @@ $aligns : left right center;
       $modifier: '-xs';
     }
 
-    @include create-mq($breakpoint, 'max') {
+    @include create-mq($breakpoint, 'min') {
       .text#{$modifier}-#{$align} {
          text-align: $align !important;
       }

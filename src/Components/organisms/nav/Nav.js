@@ -15,7 +15,7 @@ const Nav = () => {
 
     return (
         <nav className=" ">
-            <TextWithArrow src={flechaBarraImg} text="nav bar" className="color-black-aplha-6 align-end"/>
+            <TextWithArrow src={flechaBarraImg} text="nav bar" className="color-black-aplha-6 align-end top-40 left-m120 position-absolute"/>
 
                <Button onClick={()=>setIsOpen(!isOpen)} className="hamburger bg-hamburgerImg" id={`${isOpen && "open"}`} />
  
@@ -33,8 +33,9 @@ const Nav = () => {
                     </div>
                     <a href="mailto: aletomasr@gmail.com" className="hidden-lg-up">aletomasr@gmail.com</a>
                     </div>
-                <TextWithArrow src={flechaIconsImg} text="social icons" className="social color-black-aplha-6" />
             </ul>
+            <TextWithArrow src={flechaIconsImg} text="social icons" className="social color-black-aplha-6 position-absolute top-50 right-140 align-end" />
+
         </nav>
     )
 }

@@ -3,6 +3,7 @@ $box-sizes: (
   '0': 0,
   '5' : 5px,
   '20': 20px,
+  '25': 25px,
   '30': 30px,
   '35': 35px,
   '40': 40px,
@@ -10,8 +11,13 @@ $box-sizes: (
   '60': 60px,
   '70': 70px,
   '100': 100px,
+  '140': 140px,
   '200': 200px,
+  '270': 270px,
   '10': 10px,
+  'm120': -120px,
+  'm50': -50px,
+  'm10': -10px
 );
 
 @each $padding,
@@ -35,6 +41,10 @@ $padding-code in $box-sizes {
     @include create-mq($breakpoint, 'min') {
       .padding#{$modifier}-#{$padding} {
         padding: $padding-code !important;
+      }
+      .padding-y#{$modifier}-#{$padding} {
+        padding-top: $padding-code !important;
+        padding-bottom: $padding-code !important;
       }
     }
   }
@@ -64,6 +74,9 @@ $margin-code in $box-sizes {
   .left-#{$margin}{
     left: $margin-code;
   }
+  .right-#{$margin}{
+    right: $margin-code;
+  }
   @each $modifier ,
   $breakpoint in $map-viewports {
   @include create-mq($breakpoint, 'min') {
@@ -72,6 +85,9 @@ $margin-code in $box-sizes {
     }
     .m-t#{$modifier}-#{$margin} {
       margin-top: $margin-code !important;
+    }
+    .m-b#{$modifier}-#{$margin} {
+      margin-bottom: $margin-code !important;
     }
     .top#{$modifier}-#{$margin}{
       top: $margin-code !important;

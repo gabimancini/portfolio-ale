@@ -25,7 +25,7 @@ p{
   letter-spacing: 0.7px;
   line-height: 28px;
 }
-@media  (max-width: 1440px){
+@media  (min-width: 1440px){
   p{
     line-height: 34px;
   }

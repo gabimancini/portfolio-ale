@@ -4,6 +4,10 @@
 @media screen and (min-width: 879px){
     .textWithArrow_container {
         display: flex;
-        position: absolute;
+    }
+    .picture img{
+        order:1;
+        margin-left: 5px;
+        margin-top: 10px;
     }
 }

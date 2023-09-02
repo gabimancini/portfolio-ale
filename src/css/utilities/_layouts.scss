@@ -20,9 +20,13 @@ $flex__cols: 12;
 }
 
 .container {
-    max-width: 1230px;
+    max-width: 1440px;
     margin: 0 auto;
-
+    padding: 20px;
+@media (min-width: 1440px){
+    padding-left: 70px;
+    padding-right: 70px;
+}
     @each $modifier ,
     $breakpoint in $map-viewports {
         @include create-col-classes($modifier, $flex__cols, $breakpoint);
