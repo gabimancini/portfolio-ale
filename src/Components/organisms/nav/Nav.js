@@ -12,14 +12,15 @@ import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isClicked, setIsClicked] = useState(false)
 
     return (
-        <nav className=" " onClick={()=>setIsOpen(!isOpen)}>
+        <nav className=" " >
             <TextWithArrow src={flechaBarraImg} text="nav bar" className="color-black-aplha-6 align-end top-40 left-m120 position-absolute"/>
 
-               <Button  className="hamburger bg-hamburgerImg" id={`${isOpen && "open"}`} />
+               <Button onClick={()=>setIsOpen(!isOpen)} className="hamburger bg-hamburgerImg" id={`${isOpen && "open"}`} />
  
-            <ul>
+            <ul onClick={()=>setIsOpen(!isOpen)} id={`${isOpen && "open"}`} >
             <Link to="/">Home</Link>
             <HashLink to="/#about"> About me</HashLink>
             <Link to="/projects"> Projects</Link>

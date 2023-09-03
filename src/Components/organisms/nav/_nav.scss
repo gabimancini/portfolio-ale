@@ -29,7 +29,7 @@ nav .line {
 .hamburger#open {
     background: url('../assets/cerrarImg.svg') no-repeat;
 }
-
+@media screen and (max-width: 997px) {
 .hamburger#open+ul {
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@ nav .line {
     padding: 40px;
     z-index: 999;
 }
-
+}
 @media screen and (min-width: 997px) {
     header {
         background: url(../assets/bordeMenu.svg) no-repeat bottom/contain;

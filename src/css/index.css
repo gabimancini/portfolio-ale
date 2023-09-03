@@ -6197,21 +6197,22 @@ nav .line {
   background: url("../assets/cerrarImg.svg") no-repeat;
 }
 
-.hamburger#open + ul {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  height: auto;
-  width: 90%;
-  top: 100px;
-  left: 0;
-  background-color: #D9D9D9;
-  transform: translateX(5%);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
-  padding: 40px;
-  z-index: 999;
+@media screen and (max-width: 997px) {
+  .hamburger#open + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: auto;
+    width: 90%;
+    top: 100px;
+    left: 0;
+    background-color: #D9D9D9;
+    transform: translateX(5%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    z-index: 999;
+  }
 }
-
 @media screen and (min-width: 997px) {
   header {
     background: url(../assets/bordeMenu.svg) no-repeat bottom/contain;
