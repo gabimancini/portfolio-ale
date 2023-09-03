@@ -1,4 +1,4 @@
-$background: stickyImg hamburgerImg cerrarImg bordeMenu hero_btn sticky_green sticky_blue sticky_yellow browser1 browser2 btn_download;
+$background: stickyImg hamburgerImg cerrarImg bordeMenu hero_btn sticky_green sticky_blue sticky_yellow  btn_download frame1 frame2 frame3 frame4 web_btn figma_btn;
 
 @each $img in $background {
   .bg-#{$img} {

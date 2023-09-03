@@ -3628,6 +3628,54 @@
     height: 271px;
   }
 }
+.w-350 {
+  width: 350px;
+}
+
+.h-350 {
+  height: 350px;
+}
+
+.width-xs-350 {
+  width: 350px;
+}
+
+.height-xs-350 {
+  height: 350px;
+}
+
+@media screen and (min-width: 312px) {
+  .width-sm-350 {
+    width: 350px;
+  }
+  .height-sm-350 {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .width-md-350 {
+    width: 350px;
+  }
+  .height-md-350 {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .width-lg-350 {
+    width: 350px;
+  }
+  .height-lg-350 {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .width-xl-350 {
+    width: 350px;
+  }
+  .height-xl-350 {
+    height: 350px;
+  }
+}
 .w-400 {
   width: 400px;
 }
@@ -3974,6 +4022,15 @@ p {
     line-height: 34px;
   }
 }
+.weblink, .figmalink {
+  width: 91px;
+  display: inline-block;
+  height: 35px;
+  text-align: center;
+  line-height: 2.4;
+  margin-right: 20px;
+}
+
 .wrap {
   flex-wrap: wrap;
 }
@@ -5206,66 +5263,182 @@ body {
     background-size: contain !important;
   }
 }
-.bg-browser1 {
-  background: url("../assets/browser1.svg") no-repeat;
-  background-size: cover;
-}
-
-.bg-xs-contain {
-  background-size: contain !important;
-}
-
-@media screen and (min-width: 312px) {
-  .bg-sm-contain {
-    background-size: contain !important;
-  }
-}
-@media screen and (min-width: 767px) {
-  .bg-md-contain {
-    background-size: contain !important;
-  }
-}
-@media screen and (min-width: 992px) {
-  .bg-lg-contain {
-    background-size: contain !important;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .bg-xl-contain {
-    background-size: contain !important;
-  }
-}
-.bg-browser2 {
-  background: url("../assets/browser2.svg") no-repeat;
-  background-size: cover;
-}
-
-.bg-xs-contain {
-  background-size: contain !important;
-}
-
-@media screen and (min-width: 312px) {
-  .bg-sm-contain {
-    background-size: contain !important;
-  }
-}
-@media screen and (min-width: 767px) {
-  .bg-md-contain {
-    background-size: contain !important;
-  }
-}
-@media screen and (min-width: 992px) {
-  .bg-lg-contain {
-    background-size: contain !important;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .bg-xl-contain {
-    background-size: contain !important;
-  }
-}
 .bg-btn_download {
   background: url("../assets/btn_download.svg") no-repeat;
+  background-size: cover;
+}
+
+.bg-xs-contain {
+  background-size: contain !important;
+}
+
+@media screen and (min-width: 312px) {
+  .bg-sm-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 767px) {
+  .bg-md-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-lg-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bg-xl-contain {
+    background-size: contain !important;
+  }
+}
+.bg-frame1 {
+  background: url("../assets/frame1.svg") no-repeat;
+  background-size: cover;
+}
+
+.bg-xs-contain {
+  background-size: contain !important;
+}
+
+@media screen and (min-width: 312px) {
+  .bg-sm-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 767px) {
+  .bg-md-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-lg-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bg-xl-contain {
+    background-size: contain !important;
+  }
+}
+.bg-frame2 {
+  background: url("../assets/frame2.svg") no-repeat;
+  background-size: cover;
+}
+
+.bg-xs-contain {
+  background-size: contain !important;
+}
+
+@media screen and (min-width: 312px) {
+  .bg-sm-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 767px) {
+  .bg-md-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-lg-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bg-xl-contain {
+    background-size: contain !important;
+  }
+}
+.bg-frame3 {
+  background: url("../assets/frame3.svg") no-repeat;
+  background-size: cover;
+}
+
+.bg-xs-contain {
+  background-size: contain !important;
+}
+
+@media screen and (min-width: 312px) {
+  .bg-sm-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 767px) {
+  .bg-md-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-lg-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bg-xl-contain {
+    background-size: contain !important;
+  }
+}
+.bg-frame4 {
+  background: url("../assets/frame4.svg") no-repeat;
+  background-size: cover;
+}
+
+.bg-xs-contain {
+  background-size: contain !important;
+}
+
+@media screen and (min-width: 312px) {
+  .bg-sm-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 767px) {
+  .bg-md-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-lg-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bg-xl-contain {
+    background-size: contain !important;
+  }
+}
+.bg-web_btn {
+  background: url("../assets/web_btn.svg") no-repeat;
+  background-size: cover;
+}
+
+.bg-xs-contain {
+  background-size: contain !important;
+}
+
+@media screen and (min-width: 312px) {
+  .bg-sm-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 767px) {
+  .bg-md-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bg-lg-contain {
+    background-size: contain !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bg-xl-contain {
+    background-size: contain !important;
+  }
+}
+.bg-figma_btn {
+  background: url("../assets/figma_btn.svg") no-repeat;
   background-size: cover;
 }
 
