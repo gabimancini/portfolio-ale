@@ -4527,6 +4527,10 @@ html {
   font-weight: 400;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 li {
   list-style-type: none;
 }

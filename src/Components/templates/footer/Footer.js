@@ -30,7 +30,7 @@ const Footer = () => {
                     <IconLink href="#" src={linkedinIcon} alt='Linkedin' className='icon' />
                     <IconLink href="#" src={behanceIcon} alt='Behance' className='icon' />
                 </div>
-                <a href="mailto:aletomasr@gmail.com" className='email font-size-paragraph m-x-20'>aletomasr@gmail.com</a>
+                <a href="mailto:aletomasr@gmail.com" className='email font-size-paragraph'>aletomasr@gmail.com</a>
             </div>
             </div>
             <div className='footer_bottom'>
