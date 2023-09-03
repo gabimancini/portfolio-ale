@@ -14,10 +14,10 @@ const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className=" ">
+        <nav className=" " onClick={()=>setIsOpen(!isOpen)}>
             <TextWithArrow src={flechaBarraImg} text="nav bar" className="color-black-aplha-6 align-end top-40 left-m120 position-absolute"/>
 
-               <Button onClick={()=>setIsOpen(!isOpen)} className="hamburger bg-hamburgerImg" id={`${isOpen && "open"}`} />
+               <Button  className="hamburger bg-hamburgerImg" id={`${isOpen && "open"}`} />
  
             <ul>
             <Link to="/">Home</Link>

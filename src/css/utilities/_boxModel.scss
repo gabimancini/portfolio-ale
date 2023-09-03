@@ -47,6 +47,10 @@ $padding-code in $box-sizes {
         padding-top: $padding-code !important;
         padding-bottom: $padding-code !important;
       }
+      .padding-x#{$modifier}-#{$padding} {
+        padding-left: $padding-code !important;
+        padding-right: $padding-code !important;
+      }
     }
   }
 }
@@ -123,6 +127,7 @@ $sizes: (
   '271': 271px,
   '350': 350px,
   '400': 400px,
+  '664': 664px,
   '676': 676px,
   '50per': 50%,
   '181': 181px,
@@ -138,6 +143,9 @@ $size-code in $sizes {
 
   .h-#{$size} {
     height: $size-code;
+  }
+  .maxw-#{$size} {
+    max-width: $size-code;
   }
   @each $modifier ,
 $breakpoint in $map-viewports {

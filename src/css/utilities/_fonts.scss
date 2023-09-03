@@ -11,6 +11,7 @@ $font-sizes: (
   'h3': clamp(18px, 2.5vw, 42px),
   'h4': clamp(18px, -0.875rem + 8.333vw, 24px),
   'paragraph': clamp(14px, 2.5vw, 18px),
+  'span': clamp(13px, 0.5vw, 18px),
   '14':  14px,
   '15' : 0.8em,
   '1_5': clamp(12px, 2.5vw, 25px),
