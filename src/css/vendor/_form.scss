@@ -1,0 +1,27 @@
+form label{
+    color: rgba(0, 0, 0, 0.50);
+}
+form input,
+form textarea {
+    background-position: bottom !important;
+    background-size: contain !important;
+    border: none;
+    margin-bottom: 40px;
+}
+
+form input {
+    height: 30px;
+}
+
+form textarea {
+    height: 135px;
+    resize: none;
+}
+form button{
+    background-size: contain !important;
+    height: 60px;
+    width: 160px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5;
+}

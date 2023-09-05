@@ -127,6 +127,8 @@ $sizes: (
   '271': 271px,
   '350': 350px,
   '400': 400px,
+  '478': 478px,
+  '629': 629px,
   '664': 664px,
   '676': 676px,
   '50per': 50%,
@@ -159,6 +161,9 @@ $breakpoint in $map-viewports {
     }
     .height#{$modifier}-#{$size} {
       height: $size-code;
+    }
+    .maxw#{$modifier}-#{$size} {
+      max-width: $size-code;
     }
   }
 
