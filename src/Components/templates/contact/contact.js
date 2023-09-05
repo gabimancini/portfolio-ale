@@ -36,11 +36,11 @@ const Contact = () => {
     return (
         <div className="container text-center m-t-60 padding-x-lg-140">
             <h2 className="color-primary-black font-size-h2 text-center m-y-10 m-b-lg-25">Contact ME</h2>
-            <p className="description maxw-629 m-auto font-size-paragraph">
+            <p className="description maxw-lg-629 m-auto font-size-paragraph">
                 You can also use the quick contact form to make inquiries and ask questions about my services and projects. Let's talk?
             </p>
-            <div className='d-flex direction-sm-col direction-md-row justify-md-space-evenly m-y-lg-140 text-left'>
-                <form onSubmit={handleSubmit} className='d-flex direction-column container__col-md-6'>
+            <div className='d-flex direction-sm-col direction-md-row justify-md-space-evenly m-t-sm-70 m-y-lg-140 text-left'>
+                <form onSubmit={handleSubmit} className='d-flex direction-column container__col-md-7 container__col-lg-6'>
                     <label htmlFor="name" className='font-size-paragraph'>Name</label>
                     <input
                         id="name"
@@ -72,8 +72,8 @@ const Contact = () => {
 
                     <button type="submit" className='bg-hero_btn'>Send message...</button>
                 </form>
-                <div className='container__col-md-6 m-t-sm-40 text-right'>
-                    <img src={ImgContacto} alt="Envelope" className='maxw-lg-478'/>
+                <div className='container__col-md-5 container__col-lg-6 m-t-sm-70 m-t-md-50 m-t-lg-0  text-right'>
+                    <img src={ImgContacto} alt="Envelope" className='maxw-md-257 maxw-lg-478'/>
                 </div>
             </div>
         </div>
