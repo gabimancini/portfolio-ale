@@ -10,6 +10,11 @@ const Contact = () => {
     })
     function handleSubmit(evt) {
         evt.preventDefault();
+        setValues({
+            name: "",
+            email: "",
+            message: ""
+        });
     }
     function handleChange(evt) {
         /*
@@ -32,7 +37,7 @@ const Contact = () => {
 
         // Sincroniza el estado de nuevo
         setValues(newValues);
-    }
+    } 
     return (
         <div className="container text-center m-t-60 padding-x-lg-140">
             <h2 className="color-primary-black font-size-h2 text-center m-y-10 m-b-lg-25">Contact ME</h2>
