@@ -92,7 +92,7 @@ const Contact = () => {
                 <div className='d-flex justify-end container__col-md-5 container__col-lg-6 m-t-sm-70 m-t-md-50 m-t-lg-0 '>
                     <div className='maxw-md-257 maxw-lg-478 position-relative text-right'>
                         <img src={ImgContacto} alt="Envelope" />
-                        {isSubmit? <div className="d-flex justify-center align-center message color-blue" ref={confirmMsg}><p>Message sent succesfully.<AiOutlineCheckCircle className='m-x-10' /></p></div> : null}
+                        {isSubmit? <div className="d-flex justify-center align-center message color-blue" ref={confirmMsg}><p className='font-size-paragraph'>Message sent succesfully.<AiOutlineCheckCircle className='m-x-10' /></p></div> : null}
                     </div>
                 </div>
             </div>
