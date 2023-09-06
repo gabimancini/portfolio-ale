@@ -1,24 +1,32 @@
 import { useState, useRef } from 'react';
 import ImgContacto from './../../../assets/imgContacto.svg';
-import {AiOutlineCheckCircle}  from "react-icons/ai";
+import { AiOutlineCheckCircle } from "react-icons/ai";
+import emailjs from '@emailjs/browser';
 const Contact = () => {
-     const [values, setValues] = useState({
+    const [isSubmit, setIsSubmit] = useState(false);
+    const [values, setValues] = useState({
         name: "",
         email: "",
         message: ""
     })
-    const [confirm, setConfirm] = useState(false)
+    const form = useRef()
     const confirmMsg = useRef()
-    function handleSubmit(evt) {
+    const handleSubmit = (evt) => {
         evt.preventDefault();
-        setConfirm(true)
+        emailjs.sendForm('service_l071erp', 'template_u2heo0r', form.current, 'OHHlNmI6Xr8qVTGjG')
+            .then((result) => { console.log(result.text) },
+                (error) => {
+                    console.log(error.text)
+                }
+            ) 
         setValues({
             name: "",
             email: "",
             message: ""
         });
+        setIsSubmit(true)
     }
-    function handleChange(evt) {
+    const handleChange = (evt) => {
         /*
           evt.target es el elemento que ejecuto el evento
           name identifica el input y value describe el valor actual
@@ -39,7 +47,8 @@ const Contact = () => {
 
         // Sincroniza el estado de nuevo
         setValues(newValues);
-    } 
+        setIsSubmit(false)
+    }
     return (
         <div className="container text-center m-t-60 padding-x-lg-140">
             <h2 className="color-primary-black font-size-h2 text-center m-y-10 m-b-lg-25">Contact ME</h2>
@@ -47,7 +56,7 @@ const Contact = () => {
                 You can also use the quick contact form to make inquiries and ask questions about my services and projects. Let's talk?
             </p>
             <div className='d-flex direction-sm-col direction-md-row justify-md-space-evenly m-t-sm-70 m-y-lg-140 text-left'>
-                <form onSubmit={handleSubmit} className='d-flex direction-column container__col-md-7 container__col-lg-6'>
+                <form ref={form} onSubmit={handleSubmit} className='d-flex direction-column container__col-md-7 container__col-lg-6'>
                     <label htmlFor="name" className='font-size-paragraph'>Name</label>
                     <input
                         id="name"
@@ -80,10 +89,10 @@ const Contact = () => {
                     <button type="submit" className='bg-hero_btn'>Send message...</button>
                 </form>
                 <div className='d-flex justify-end container__col-md-5 container__col-lg-6 m-t-sm-70 m-t-md-50 m-t-lg-0 '>
-                   <div className='maxw-md-257 maxw-lg-478 position-relative text-right'> 
-                   <img src={ImgContacto} alt="Envelope" />
-                   {confirm === true?<div className="d-flex justify-center align-center message color-blue" ref={confirmMsg}><p>Message sent succesfully.<AiOutlineCheckCircle className='m-x-10'/></p></div> :null}
-                   </div>
+                    <div className='maxw-md-257 maxw-lg-478 position-relative text-right'>
+                        <img src={ImgContacto} alt="Envelope" />
+                        {isSubmit? <div className="d-flex justify-center align-center message color-blue" ref={confirmMsg}><p>Message sent succesfully.<AiOutlineCheckCircle className='m-x-10' /></p></div> : null}
+                    </div>
                 </div>
             </div>
         </div>
