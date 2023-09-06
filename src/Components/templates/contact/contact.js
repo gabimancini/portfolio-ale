@@ -5,24 +5,25 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
     const [isSubmit, setIsSubmit] = useState(false);
     const [values, setValues] = useState({
-        name: "",
-        email: "",
-        message: ""
+        form_name: "",
+        form_email: "",
+       form_message: ""
     })
     const form = useRef()
     const confirmMsg = useRef()
     const handleSubmit = (evt) => {
+        console.log("click")
         evt.preventDefault();
-        emailjs.sendForm('service_l071erp', 'template_u2heo0r', form.current, 'OHHlNmI6Xr8qVTGjG')
+        emailjs.sendForm("service_l071erp","template_de4kcid", form.current, 'OHHlNmI6Xr8qVTGjG')
             .then((result) => { console.log(result.text) },
                 (error) => {
                     console.log(error.text)
                 }
             ) 
         setValues({
-            name: "",
-            email: "",
-            message: ""
+            form_name: "",
+            form_email: "",
+           form_message: ""
         });
         setIsSubmit(true)
     }
@@ -57,29 +58,29 @@ const Contact = () => {
             </p>
             <div className='d-flex direction-sm-col direction-md-row justify-md-space-evenly m-t-sm-70 m-y-lg-140 text-left'>
                 <form ref={form} onSubmit={handleSubmit} className='d-flex direction-column container__col-md-7 container__col-lg-6'>
-                    <label htmlFor="name" className='font-size-paragraph'>Name</label>
+                    <label htmlFor="form_name" className='font-size-paragraph'>Name</label>
                     <input
-                        id="name"
-                        name="name"
+                        id="form_name"
+                        name="form_name"
                         type="name"
                         value={values.name}
                         onChange={handleChange}
                         className='bg-input_line'
                     />
-                    <label htmlFor="email className='font-size-paragraph'">Email *</label>
+                    <label htmlFor="form_email" className="font-size-paragraph">Email *</label>
                     <input
-                        id="email"
-                        name="email"
+                        id="form_email"
+                        name="form_email"
                         type="email"
                         value={values.email}
                         onChange={handleChange}
                         className='bg-input_line'
                         required
                     />
-                    <label htmlFor="message" className='font-size-paragraph'>Message...</label>
+                    <label htmlFor="form_message" className='font-size-paragraph'>Message...</label>
                     <textarea
-                        id="message"
-                        name="message"
+                        id="form_message"
+                        name="form_message"
                         type="message"
                         value={values.message}
                         onChange={handleChange}
