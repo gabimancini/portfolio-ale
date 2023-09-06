@@ -11,22 +11,22 @@ const Contact = () => {
     })
     const form = useRef()
     const confirmMsg = useRef()
-    const handleSubmit = (evt) => {
-        console.log("click")
+    const handleSubmit = (evt) => { 
         evt.preventDefault();
+      
+    setIsSubmit(true)
         emailjs.sendForm("service_l071erp","template_de4kcid", form.current, 'OHHlNmI6Xr8qVTGjG')
-            .then((result) => { console.log(result.text) },
-                (error) => {
-                    console.log(error.text)
-                }
-            ) 
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
         setValues({
             form_name: "",
             form_email: "",
            form_message: ""
-        });
-        setIsSubmit(true)
-    }
+        }); 
+    } 
     const handleChange = (evt) => {
         /*
           evt.target es el elemento que ejecuto el evento
@@ -48,7 +48,7 @@ const Contact = () => {
 
         // Sincroniza el estado de nuevo
         setValues(newValues);
-        setIsSubmit(false)
+        setIsSubmit(false);
     }
     return (
         <div className="container text-center m-t-60 padding-x-lg-140">
@@ -63,7 +63,7 @@ const Contact = () => {
                         id="form_name"
                         name="form_name"
                         type="name"
-                        value={values.name}
+                        value={values.form_name}
                         onChange={handleChange}
                         className='bg-input_line'
                     />
@@ -72,7 +72,7 @@ const Contact = () => {
                         id="form_email"
                         name="form_email"
                         type="email"
-                        value={values.email}
+                        value={values.form_email}
                         onChange={handleChange}
                         className='bg-input_line'
                         required
@@ -82,7 +82,7 @@ const Contact = () => {
                         id="form_message"
                         name="form_message"
                         type="message"
-                        value={values.message}
+                        value={values.form_message}
                         onChange={handleChange}
                         className='bg-input_line'
                     ></textarea>
