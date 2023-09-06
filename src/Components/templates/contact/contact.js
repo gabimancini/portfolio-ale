@@ -1,15 +1,17 @@
-import { useState } from 'react';
-import ImgContacto from './../../../assets/imgContacto.svg'
-
+import { useState, useRef } from 'react';
+import ImgContacto from './../../../assets/imgContacto.svg';
+import {AiOutlineCheckCircle}  from "react-icons/ai";
 const Contact = () => {
-    const emailRegexp = new RegExp(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/);
-    const [values, setValues] = useState({
+     const [values, setValues] = useState({
         name: "",
         email: "",
         message: ""
     })
+    const [confirm, setConfirm] = useState(false)
+    const confirmMsg = useRef()
     function handleSubmit(evt) {
         evt.preventDefault();
+        setConfirm(true)
         setValues({
             name: "",
             email: "",
@@ -77,8 +79,11 @@ const Contact = () => {
 
                     <button type="submit" className='bg-hero_btn'>Send message...</button>
                 </form>
-                <div className='container__col-md-5 container__col-lg-6 m-t-sm-70 m-t-md-50 m-t-lg-0  text-right'>
-                    <img src={ImgContacto} alt="Envelope" className='maxw-md-257 maxw-lg-478'/>
+                <div className='d-flex justify-end container__col-md-5 container__col-lg-6 m-t-sm-70 m-t-md-50 m-t-lg-0 '>
+                   <div className='maxw-md-257 maxw-lg-478 position-relative text-right'> 
+                   <img src={ImgContacto} alt="Envelope" />
+                   {confirm === true?<div className="d-flex justify-center align-center message color-blue" ref={confirmMsg}><p>Mensaje enviado con éxito <AiOutlineCheckCircle className='m-x-10'/></p></div> :null}
+                   </div>
                 </div>
             </div>
         </div>
