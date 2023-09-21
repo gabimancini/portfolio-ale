@@ -51,7 +51,7 @@ const Contact = () => {
         setIsSubmit(false);
     }
     return (
-        <div className="container text-center m-t-60 padding-x-lg-140">
+        <div id="contact" className="container text-center m-t-60 padding-x-lg-140">
             <h2 className="color-primary-black font-size-h2 text-center m-y-10 m-b-lg-25">Contact ME</h2>
             <p className="description maxw-lg-629 m-auto font-size-paragraph">
                 You can also use the quick contact form to make inquiries and ask questions about my services and projects. Let's talk?

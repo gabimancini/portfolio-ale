@@ -5903,6 +5903,34 @@ body {
     font-size: 0.8em !important;
   }
 }
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-xs-18 {
+  font-size: 18px !important;
+}
+
+@media screen and (max-width: 312px) {
+  .font-size-sm-18 {
+    font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .font-size-md-18 {
+    font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .font-size-lg-18 {
+    font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .font-size-xl-18 {
+    font-size: 18px !important;
+  }
+}
 .font-size-1_5 {
   font-size: clamp(12px, 2.5vw, 25px);
 }
