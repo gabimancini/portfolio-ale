@@ -15,7 +15,7 @@ const Contact = () => {
         evt.preventDefault();
       
     setIsSubmit(true)
-        emailjs.sendForm("service_l071erp","template_de4kcid", form.current, 'OHHlNmI6Xr8qVTGjG')
+        emailjs.sendForm("service_r7c50lb","template_de4kcid", form.current, 'OHHlNmI6Xr8qVTGjG')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
