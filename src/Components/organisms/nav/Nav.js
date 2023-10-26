@@ -28,9 +28,9 @@ const Nav = () => {
                 <div className="d-flex direction-column align-center">
                 <h3 className="hidden-md-up">Follow me</h3>
                 <div className="text-center"> 
-                    <IconLink href="#" src={instagramIcon} alt='Instagram' className='icon' />
-                    <IconLink href="#" src={linkedinIcon} alt='Linkedin' className='icon' />
-                    <IconLink href="#" src={behanceIcon} alt='Behance' className='icon' />
+                    <IconLink href="https://www.instagram.com/ale_tom79/"  src={instagramIcon} alt='Instagram' className='icon' />
+                    <IconLink href="https://www.linkedin.com/in/alejandroritta/" src={linkedinIcon} alt='Linkedin' className='icon' />
+                    <IconLink href="https://www.behance.net/alejandroritta" src={behanceIcon} alt='Behance' className='icon' />
                     </div>
                     <a href="mailto: aletomasr@gmail.com" className="hidden-lg-up">aletomasr@gmail.com</a>
                     </div>
