@@ -1,7 +1,7 @@
 import Cards from "../organisms/cards";
 import Gabriela from '../../assets/frame1.svg';
 import Pet from '../../assets/frame2.svg';
-import Devmagister from '../../assets/frame3.svg';
+import Band from '../../assets/frame5.svg';
 import Steak from '../../assets/frame4.svg';
 import WebLink from "../organisms/webLink";
 import FigmaLink from "../organisms/figmaLink";
@@ -21,9 +21,9 @@ const Projects = () => {
             hreffigma: undefined
         },
         {
-            img: Devmagister,
-            hrefweb: "https://www.devmagister.com/",
-            hreffigma: "https://www.figma.com/file/98Vep8i3sGPi3CnA7zm5j8/DevMagister?type=design&node-id=702%3A266&mode=design&t=2sbJPkWKx5crb6wR-1"
+            img: Band,
+            hrefweb: "https://www.purplecircleband.com/",
+            hreffigma: "https://www.figma.com/file/b0ak52sx6B2fc5ZSwtzi4A/Purple-Circle?node-id=25%3A9998&mode=dev"
         },
         {
             img: Steak,
